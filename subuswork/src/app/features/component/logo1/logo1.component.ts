@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class Logo1Component implements OnInit {
 
   constructor() { }
-  private time = 10;
+  public time = 10;
   ngOnInit() {
     setInterval(() => {
       if (this.time === 30) {
