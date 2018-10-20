@@ -1,46 +1,54 @@
 // component wrapper
 .logo1 {
-    height: 200px;
-    padding-top: 15px;
+    height: 140px;
+    padding-top: 30px;
     width: 600px;
     margin: auto;
-    transition: .4s all ease-in-out;
-    
-    // component foundation layer
+    transition: .4s all ease-in-out; // component foundation layer
     .parent_layer {
         position: absolute;
-        background: #fff;
-        height: 200px;
+        height: 140px;
         width: 600px;
         border-radius: 100px;
         overflow: hidden;
-    }
-
-    // layer1 - background gradients initial stylings
-    .layer1{
+    } // layer1 - background gradients initial stylings
+    .layer1 {
         position: absolute;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
         z-index: 1;
+        background: #011133;
+        transition: .4s all ease-in-out;
+        z-index: 1;
     }
-
-    //24 gradients for background - sky
-    .bg-grad6{background-color: #011133; background: linear-gradient(259deg, #011133 67%, #460209 100%);}
-    .bg-grad7{background-color: #0b1b3e; background: linear-gradient(287deg, #0b1b3e 55%, #9e5a06 100%);}
-    .bg-grad8{background-color: #21345c; background: linear-gradient(283deg, #21345c 42%, #e0bc04 100%);}
-    .bg-grad9{background-color: #465777; background: linear-gradient(301deg, #465777 25%, #fff900 100%);}
-    .bg-grad10{background-color: #8d97a0; background: linear-gradient(321deg, #8d97a0 0%, #f5ff44 100%);}
-    .bg-grad11{background-color: #FFE53B; background: linear-gradient(147deg, #FFE53B 60%, #FF2525 100%);}
-    .bg-grad12{background-color: #FFE53B; background: linear-gradient(166deg, #FFE53B 71%, #FF2525 100%);}
-    .bg-grad13{background-color: #FFE53B; background: linear-gradient(180deg, #FFE53B 86%, #FF2525 100%);}
-    .bg-grad14{background-color: #FFE53B; background: linear-gradient(180deg, #FFE53B 86%, #FF2525 100%);}
-    .bg-grad15{background-color: #FFE53B; background: linear-gradient(180deg, #FFE53B 86%, #FF2525 100%);}
-    .bg-grad16{background-color: #FFE53B; background: linear-gradient(237deg, #FFE53B 67%, #FF2525 100%);}
-    .bg-grad17{background-color: #FFE53B; background: linear-gradient(237deg, #FFE53B 22%, #FF2525 82%, #f1236f 100%);}
-    .bg-grad18{background-color: #FFE53B; background: linear-gradient(246deg, #FFE53B 0%, #FF2525 33%, #440109 100%);}
-    .bg-grad19{background-color: #FF2525; background: linear-gradient(270deg, #FF2525 0%, #440109 24%, #070718 100%);}
-    .bg-grad20{background-color: #440109; background: linear-gradient(301deg, #440109 0%, #070718 20%, #111111 100%);}
-    .bg-grad21{background-color: #070718; background: linear-gradient(301deg, #070718 89%, #111111 99%);}
+    .layer2 {
+        position: absolute;
+        display: visible;
+        left: 0;
+        top: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #ff7554;
+        -webkit-box-shadow: 0px 0px 20px -1px rgba(255, 227, 84, 1);
+        -moz-box-shadow: 0px 0px 20px -1px rgba(255, 227, 84, 1);
+        box-shadow: 0px 0px 20px -1px rgba(255, 227, 84, 1);
+        z-index: 2;
+    }
+    .layer3 {
+        position: absolute;
+        display: visible;
+        left: 0;
+        top: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #bde4dc;
+        -webkit-box-shadow: 0px 0px 20px -1px rgba(79, 250, 213, 1);
+        -moz-box-shadow: 0px 0px 20px -1px rgba(79, 250, 213, 1);
+        box-shadow: 0px 0px 20px -1px rgba(79, 250, 213, 1);
+        z-index: 3;
+    }
 }
