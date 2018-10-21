@@ -1,6 +1,5 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import * as moment from 'moment';
-import { lookup } from 'dns';
 
 @Component({
   selector: 'app-logo1',
