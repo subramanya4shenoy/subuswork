@@ -1,10 +1,12 @@
 <div class="logo1">
   <div class="parent_layer">
     <!-- background -->
-    <div class="layer1"></div>
+    <div class="layer1" [hidden]="!show"></div>
     <!-- sun -->
-    <div class="layer2"></div>
+    <div class="layer2" [hidden]="!show"></div>
     <!-- moon -->
-    <div class="layer3"></div>
+    <div class="layer3" [hidden]="!show"></div>
+    <!-- landscape -->
+    <div class="layer4" [hidden]="!show"></div>
   </div>
 </div>
