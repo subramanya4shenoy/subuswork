@@ -66,4 +66,99 @@
         background-repeat: no-repeat;
         background-position: 0px 17px;
     }
+
+    .layer5{
+        position: absolute;
+        left: calc(50% - 36px);
+        top: 35px;
+        width: 75px;
+        height: 75px;
+        background: url('../../../../assets/image/logo.png');       
+        background-size: cover;
+        z-index: 6;        
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .logo1 {
+        height: 140px;
+        padding-top: 30px;
+        width: 600px;
+        margin: auto;
+        margin-top: -30px;
+        transition: .4s all ease-in-out; // component foundation layer
+        .parent_layer {
+            position: absolute;
+            height: 140px;
+            width: 100%;
+            border-radius: 0px;
+            overflow: hidden;
+            transition: .4s all ease-in-out;
+        } // layer1 - background gradients initial stylings
+        .layer1 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: #011133;
+            transition: .4s all ease-in-out;
+            z-index: 1;
+        }
+        .layer2 {
+            position: absolute;
+            display: visible;
+            left: 0;
+            top: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #ff7554;
+            transition: .4s all ease-in-out;
+            -webkit-box-shadow: 0px 0px 20px -1px rgba(255, 227, 84, 1);
+            -moz-box-shadow: 0px 0px 20px -1px rgba(255, 227, 84, 1);
+            box-shadow: 0px 0px 20px -1px rgba(255, 227, 84, 1);
+            z-index: 2;
+        }
+        .layer3 {
+            position: absolute;
+            display: visible;
+            left: 0;
+            top: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #bde4dc;
+            -webkit-box-shadow: 0px 0px 20px -1px rgba(79, 250, 213, 1);
+            -moz-box-shadow: 0px 0px 20px -1px rgba(79, 250, 213, 1);
+            box-shadow: 0px 0px 20px -1px rgba(79, 250, 213, 1);
+            transition: .4s all ease-in-out;
+            z-index: 3;
+        }
+        .layer4{
+            position: absolute;
+            display: visibile;
+            width: 600px;
+            height: 140px;
+            top: 0;
+            left: 0;
+            background: url('../../../../assets/sprites/logo1/landscape-sprite.png');
+            background-size: cover;
+            z-index: 4;
+            background-repeat: no-repeat;
+            background-position: 0px 17px;
+        }
+    
+        .layer5{
+            position: absolute;
+            left: calc(50% - 36px);
+            top: 35px;
+            width: 75px;
+            height: 75px;
+            background: url('../../../../assets/image/logo.png');       
+            background-size: cover;
+            z-index: 6;        
+        }
+    }
 }

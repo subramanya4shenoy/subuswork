@@ -1,5 +1,6 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import * as moment from 'moment';
+import { lookup } from 'dns';
 
 @Component({
   selector: 'app-logo1',
@@ -37,24 +38,33 @@ export class Logo1Component implements OnInit {
   ];
   private now = parseInt(moment().format('HH'), 10);
   public show = false;
-
+  public parentLayer: any;
   constructor(public element: ElementRef) { }
 
   ngOnInit() {
-    // this. now = 0;
-    // setInterval(() => {
-    //   this.now ++;
-    //   if (this.now === 24) {
-    //     this.now = 0;
-    //   }
+    this.parentLayer = this.element.nativeElement.querySelector('.parent_layer');
+    this.setSky();
+    this.setMoon();
+    this.setSun();
+    this.setLandscape();
+    this.show = true;
+    this.loop();
+  }
+
+  loop() {
+    setInterval(() => {
+      this.now++;
+      if (this.now === 24) {
+        this.now = 0;
+      }
       this.setSky();
       this.setMoon();
       this.setSun();
       this.setLandscape();
       this.show = true;
-    // }, 3000);
-
+    }, 60000);
   }
+
 
   setSky() {
     const gradient = this.element.nativeElement.querySelector('.layer1');
@@ -65,7 +75,7 @@ export class Logo1Component implements OnInit {
     const sun = this.element.nativeElement.querySelector('.layer2');
     if ((this.now >= 6) && (this.now <= 19)) {
       sun.style.top = Math.abs(this.now - 12) * 5 + 'px';
-      sun.style.left = (this.now - 6) * 42.86 + 'px';
+      sun.style.left = (this.now - 6) * (this.parentLayer.offsetWidth / 12) + 'px';
       sun.style.opacity = 1;
     } else {
       sun.style.opacity = 0;
@@ -77,8 +87,8 @@ export class Logo1Component implements OnInit {
     if ((this.now <= 6) || (this.now >= 19)) {
       if (this.now <= 6) {
         moon.style.top = this.now * 5 + 'px';
-        moon.style.left = (this.now + 6) * 42.86 + 'px';
-        moon.style.zIndex = 4;
+        moon.style.left = (this.now + 6) * (this.parentLayer.offsetWidth / 12) + 'px';
+        moon.style.zIndex = 5;
         moon.style.opacity = 1;
         if (this.now === 6) {
           moon.style.zIndex = 3;
@@ -86,7 +96,7 @@ export class Logo1Component implements OnInit {
       } else {
         moon.style.opacity = 1;
         moon.style.top = Math.abs(this.now - 23) * 5 + 'px';
-        moon.style.left = (this.now - 19) * 42.86 + 'px';
+        moon.style.left = (this.now - 19) * (this.parentLayer.offsetWidth / 12) + 'px';
       }
     } else {
       moon.style.opacity = 0;
