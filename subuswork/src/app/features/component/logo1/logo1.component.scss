@@ -70,11 +70,14 @@
     .layer5{
         position: absolute;
         left: calc(50% - 36px);
-        top: 35px;
+        top: 48px;
         width: 75px;
-        height: 75px;
-        background: url('../../../../assets/image/logo.png');       
+        height: 40px;
+        background-position: -20px 0px;
+        background: url('../../../../assets/image/logo.png');
         background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0px -49px;
         z-index: 6;        
     }
 }
@@ -83,9 +86,10 @@
     .logo1 {
         height: 140px;
         padding-top: 30px;
-        width: 600px;
-        margin: auto;
-        margin-top: -30px;
+        width: 100%;
+        margin-top: -31px;
+        margin-left: 0px;
+        margin-right: 0px;
         transition: .4s all ease-in-out; // component foundation layer
         .parent_layer {
             position: absolute;
@@ -153,11 +157,14 @@
         .layer5{
             position: absolute;
             left: calc(50% - 36px);
-            top: 35px;
+            top: 48px;
             width: 75px;
-            height: 75px;
-            background: url('../../../../assets/image/logo.png');       
+            height: 40px;
+            background-position: -20px 0px;
+            background: url('../../../../assets/image/logo.png');
             background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0px -49px;
             z-index: 6;        
         }
     }

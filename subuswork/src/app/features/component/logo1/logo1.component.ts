@@ -28,7 +28,7 @@ export class Logo1Component implements OnInit {
     '#b7c9e5',
     '#ffdbf4',
     '#e5b7e1',
-    '#ff4242',
+    '#ff5542',
     '#800247',
     '#1a1c35',
     '#1a1c35',
@@ -52,6 +52,7 @@ export class Logo1Component implements OnInit {
 
   loop() {
     setInterval(() => {
+      this.parentLayer = this.element.nativeElement.querySelector('.parent_layer');
       this.now++;
       if (this.now === 24) {
         this.now = 0;
@@ -61,7 +62,7 @@ export class Logo1Component implements OnInit {
       this.setSun();
       this.setLandscape();
       this.show = true;
-    }, 60000);
+    }, 1000);
   }
 
 
@@ -73,8 +74,8 @@ export class Logo1Component implements OnInit {
   setSun() {
     const sun = this.element.nativeElement.querySelector('.layer2');
     if ((this.now >= 6) && (this.now <= 19)) {
-      sun.style.top = Math.abs(this.now - 12) * 5 + 'px';
       sun.style.left = (this.now - 6) * (this.parentLayer.offsetWidth / 12) + 'px';
+      sun.style.top = Math.abs(this.now - 12) * 5 + 'px';
       sun.style.opacity = 1;
     } else {
       sun.style.opacity = 0;
@@ -86,7 +87,7 @@ export class Logo1Component implements OnInit {
     if ((this.now <= 6) || (this.now >= 19)) {
       if (this.now <= 6) {
         moon.style.top = this.now * 5 + 'px';
-        moon.style.left = (this.now + 6) * (this.parentLayer.offsetWidth / 12) + 'px';
+        moon.style.left = ((this.now + 6) * (this.parentLayer.offsetWidth / 12)) - 20 + 'px';
         moon.style.zIndex = 5;
         moon.style.opacity = 1;
         if (this.now === 6) {
@@ -95,7 +96,7 @@ export class Logo1Component implements OnInit {
       } else {
         moon.style.opacity = 1;
         moon.style.top = Math.abs(this.now - 23) * 5 + 'px';
-        moon.style.left = (this.now - 19) * (this.parentLayer.offsetWidth / 12) + 'px';
+        moon.style.left = ((this.now - 19) * (this.parentLayer.offsetWidth / 12)) - 20 + 'px';
       }
     } else {
       moon.style.opacity = 0;
