@@ -75,12 +75,12 @@ export class Logo1Component implements OnInit {
     const sun = this.element.nativeElement.querySelector('.layer2');
     if ((this.now >= 6) && (this.now <= 19)) {
       sun.style.left = ((this.now - 6) * (this.parentLayer.offsetWidth / 12)) - 20 + 'px';
-      sun.style.top = Math.abs(this.now - 12) * 5 + 'px';
+      sun.style.top = Math.abs(this.now - 12) * 15 + 'px';
       sun.style.opacity = 1;
     } else {
       sun.style.opacity = 0;
       sun.style.left = '-20px';
-      sun.style.top = '30px';
+      sun.style.top = '90px';
     }
   }
 
@@ -88,22 +88,18 @@ export class Logo1Component implements OnInit {
     const moon = this.element.nativeElement.querySelector('.layer3');
     if ((this.now <= 6) || (this.now >= 19)) {
       if (this.now <= 6) {
-        moon.style.top = this.now * 5 + 'px';
+        moon.style.top = this.now * 15 + 'px';
         moon.style.left = ((this.now + 6) * (this.parentLayer.offsetWidth / 12)) - 20 + 'px';
-        moon.style.zIndex = 5;
         moon.style.opacity = 1;
-        if (this.now === 6) {
-          moon.style.zIndex = 3;
-        }
       } else {
         moon.style.opacity = 1;
-        moon.style.top = Math.abs(this.now - 23) * 5 + 'px';
-        moon.style.left = ((this.now - 19) * (this.parentLayer.offsetWidth / 12)) - 20 + 'px';
+        moon.style.top = Math.abs(this.now - 23) * 15 + 'px';
+        moon.style.left = ((this.now - 19) * (this.parentLayer.offsetWidth / 12)) + 20 + 'px';
       }
     } else {
       moon.style.opacity = 0;
       moon.style.left = '-20px';
-      moon.style.top = '30px';
+      moon.style.top = '90px';
     }
   }
 

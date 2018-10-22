@@ -4,13 +4,14 @@
     padding-top: 30px;
     width: 600px;
     margin: auto;
-    transition: .4s all ease; // component foundation layer
+    transition: .4s all  cubic-bezier(0.18, 0.89, 0.32, 1.28); // component foundation layer
     .parent_layer {
         position: absolute;
         height: 140px;
         width: 600px;
         border-radius: 100px;
         overflow: hidden;
+        transition: .4s all  cubic-bezier(0.18, 0.89, 0.32, 1.28);
     } // layer1 - background gradients initial stylings
     .layer1 {
         position: absolute;
@@ -20,7 +21,7 @@
         height: 100%;
         z-index: 1;
         background: #011133;
-        transition: .4s all ease;
+        transition: 1s all linear;
         z-index: 1;
     }
     .layer2 {
@@ -32,7 +33,7 @@
         height: 40px;
         border-radius: 50%;
         background: #ff7554;
-        transition: top .4s ease, left .4s ease;
+        transition: top 1s linear, left 1s linear;
         -webkit-box-shadow: 0px 0px 20px -1px rgba(255, 227, 84, 1);
         -moz-box-shadow: 0px 0px 20px -1px rgba(255, 227, 84, 1);
         box-shadow: 0px 0px 20px -1px rgba(255, 227, 84, 1);
@@ -50,7 +51,7 @@
         -webkit-box-shadow: 0px 0px 20px -1px rgba(79, 250, 213, 1);
         -moz-box-shadow: 0px 0px 20px -1px rgba(79, 250, 213, 1);
         box-shadow: 0px 0px 20px -1px rgba(79, 250, 213, 1);
-        transition: top .4s ease, left .4s ease;
+        transition: top 1s linear, left 1s linear;
         z-index: 3;
     }
     .layer4{
@@ -70,7 +71,7 @@
     .layer5{
         position: absolute;
         left: calc(50% - 36px);
-        top: 48px;
+        top: 13px;
         width: 75px;
         height: 40px;
         background-position: -20px 0px;
@@ -90,14 +91,14 @@
         margin-top: -31px;
         margin-left: 0px;
         margin-right: 0px;
-        transition: .4s all ease; // component foundation layer
+        transition: .4s all  cubic-bezier(0.18, 0.89, 0.32, 1.28);// component foundation layer
         .parent_layer {
             position: absolute;
             height: 140px;
             width: 100%;
             border-radius: 0px;
             overflow: hidden;
-            transition: .4s all ease;
+            transition: .4s all  cubic-bezier(0.18, 0.89, 0.32, 1.28);
         } // layer1 - background gradients initial stylings
         .layer1 {
             position: absolute;
@@ -107,7 +108,7 @@
             height: 100%;
             z-index: 1;
             background: #011133;
-            transition: .4s all ease;
+            transition: 1s all linear;
             z-index: 1;
         }
         .layer2 {
@@ -119,7 +120,7 @@
             height: 40px;
             border-radius: 50%;
             background: #ff7554;
-            transition: .4s all ease;
+            transition: top 1s linear, left 1s linear;
             -webkit-box-shadow: 0px 0px 20px -1px rgba(255, 227, 84, 1);
             -moz-box-shadow: 0px 0px 20px -1px rgba(255, 227, 84, 1);
             box-shadow: 0px 0px 20px -1px rgba(255, 227, 84, 1);
@@ -137,7 +138,7 @@
             -webkit-box-shadow: 0px 0px 20px -1px rgba(79, 250, 213, 1);
             -moz-box-shadow: 0px 0px 20px -1px rgba(79, 250, 213, 1);
             box-shadow: 0px 0px 20px -1px rgba(79, 250, 213, 1);
-            transition: .4s all ease;
+            transition: top 1s linear, left 1s linear;
             z-index: 3;
         }
         .layer4{
@@ -157,7 +158,7 @@
         .layer5{
             position: absolute;
             left: calc(50% - 36px);
-            top: 48px;
+            top: 13px;
             width: 75px;
             height: 40px;
             background-position: -20px 0px;
