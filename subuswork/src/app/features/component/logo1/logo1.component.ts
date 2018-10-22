@@ -10,30 +10,30 @@ import * as moment from 'moment';
 export class Logo1Component implements OnInit {
 
   private gradients_collection = [
-    '#1a1c35',
-    '#1a1c35',
-    '#1a1c35',
-    '#1a1c35',
-    '#1a1c35',
-    '#1a1c35',
-    '#42233f',
-    '#676349',
-    '#ccbe63',
+    '#01051D',
+    '#01051D',
+    '#01051D',
+    '#01051D',
+    '#01051D',
+    '#01051D',
+    '#535F77',
+    '#7E7693',
+    '#D8A5B7',
     '#b7c9e5',
     '#ffffce',
     '#fff',
     '#fff',
     '#fff',
-    '#fff',
-    '#b7c9e5',
-    '#ffdbf4',
-    '#e5b7e1',
-    '#ff5542',
-    '#800247',
-    '#1a1c35',
-    '#1a1c35',
-    '#1a1c35',
-    '#1a1c35'
+    '#F9F871',
+    '#FFC75F',
+    '#FF9671',
+    '#FF6F91',
+    '#D65DB1',
+    '#845EC2',
+    '#01051D',
+    '#01051D',
+    '#01051D',
+    '#01051D'
   ];
   private now = parseInt(moment().format('HH'), 10);
   public show = false;
@@ -74,11 +74,13 @@ export class Logo1Component implements OnInit {
   setSun() {
     const sun = this.element.nativeElement.querySelector('.layer2');
     if ((this.now >= 6) && (this.now <= 19)) {
-      sun.style.left = (this.now - 6) * (this.parentLayer.offsetWidth / 12) + 'px';
+      sun.style.left = ((this.now - 6) * (this.parentLayer.offsetWidth / 12)) - 20 + 'px';
       sun.style.top = Math.abs(this.now - 12) * 5 + 'px';
       sun.style.opacity = 1;
     } else {
       sun.style.opacity = 0;
+      sun.style.left = '-20px';
+      sun.style.top = '30px';
     }
   }
 
@@ -100,25 +102,27 @@ export class Logo1Component implements OnInit {
       }
     } else {
       moon.style.opacity = 0;
+      moon.style.left = '-20px';
+      moon.style.top = '30px';
     }
   }
 
   setLandscape() {
     const landscape = this.element.nativeElement.querySelector('.layer4');
     if (this.now <= 6) {
-      landscape.style.backgroundPosition = '0px -544px';
+      landscape.style.backgroundPosition = '0px -543px';
     } else if (this.now === 7) {
-      landscape.style.backgroundPosition = '0px -404px';
+      landscape.style.backgroundPosition = '0px -403px';
     } else if (this.now === 8) {
-      landscape.style.backgroundPosition = '0px -124px';
+      landscape.style.backgroundPosition = '0px -123px';
     } else if (this.now <= 17) {
       landscape.style.backgroundPosition = '0px 17px';
     } else if (this.now < 20) {
-      landscape.style.backgroundPosition = '0px -264px';
+      landscape.style.backgroundPosition = '0px -263px';
     } else if (this.now <= 22) {
-      landscape.style.backgroundPosition = '0px -404px';
+      landscape.style.backgroundPosition = '0px -403px';
     } else {
-      landscape.style.backgroundPosition = '0px -544px';
+      landscape.style.backgroundPosition = '0px -543px';
     }
   }
 }
