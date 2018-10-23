@@ -41,6 +41,7 @@ export class Logo1Component implements OnInit {
   constructor(public element: ElementRef) { }
 
   ngOnInit() {
+    // this.now = 18;
     this.parentLayer = this.element.nativeElement.querySelector('.parent_layer');
     this.setSky();
     this.setMoon();
@@ -60,6 +61,7 @@ export class Logo1Component implements OnInit {
       this.setSky();
       this.setMoon();
       this.setSun();
+      this.setCloud();
       this.setLandscape();
       this.show = true;
     }, 1000);
@@ -75,12 +77,12 @@ export class Logo1Component implements OnInit {
     const sun = this.element.nativeElement.querySelector('.layer2');
     if ((this.now >= 6) && (this.now <= 19)) {
       sun.style.left = ((this.now - 6) * (this.parentLayer.offsetWidth / 12)) - 20 + 'px';
-      sun.style.top = Math.abs(this.now - 12) * 15 + 'px';
+      sun.style.top = Math.abs(this.now - 12) * 7 + 'px';
       sun.style.opacity = 1;
     } else {
       sun.style.opacity = 0;
-      sun.style.left = '-20px';
-      sun.style.top = '90px';
+      sun.style.left = '-40px';
+      sun.style.top = '40px';
     }
   }
 
@@ -88,37 +90,48 @@ export class Logo1Component implements OnInit {
     const moon = this.element.nativeElement.querySelector('.layer3');
     if ((this.now <= 6) || (this.now >= 19)) {
       if (this.now <= 6) {
-        moon.style.top = this.now * 15 + 'px';
+        moon.style.top = this.now * 7 + 'px';
         moon.style.left = ((this.now + 6) * (this.parentLayer.offsetWidth / 12)) - 20 + 'px';
         moon.style.opacity = 1;
       } else {
         moon.style.opacity = 1;
-        moon.style.top = Math.abs(this.now - 23) * 15 + 'px';
+        moon.style.top = Math.abs(this.now - 23) * 7 + 'px';
         moon.style.left = ((this.now - 19) * (this.parentLayer.offsetWidth / 12)) + 20 + 'px';
       }
     } else {
       moon.style.opacity = 0;
-      moon.style.left = '-20px';
-      moon.style.top = '90px';
+      moon.style.left = '-40px';
+      moon.style.top = '40px';
     }
   }
 
   setLandscape() {
     const landscape = this.element.nativeElement.querySelector('.layer4');
     if (this.now <= 6) {
-      landscape.style.backgroundPosition = '0px -543px';
+      landscape.style.backgroundPosition = '0px -379px';
     } else if (this.now === 7) {
-      landscape.style.backgroundPosition = '0px -403px';
+      landscape.style.backgroundPosition = '0px -379px';
     } else if (this.now === 8) {
-      landscape.style.backgroundPosition = '0px -123px';
+      landscape.style.backgroundPosition = '0px -99px';
     } else if (this.now <= 17) {
-      landscape.style.backgroundPosition = '0px 17px';
+      landscape.style.backgroundPosition = '0px 40px';
     } else if (this.now < 20) {
-      landscape.style.backgroundPosition = '0px -263px';
+      landscape.style.backgroundPosition = '0px -239px';
     } else if (this.now <= 22) {
-      landscape.style.backgroundPosition = '0px -403px';
+      landscape.style.backgroundPosition = '0px -379px';
     } else {
-      landscape.style.backgroundPosition = '0px -543px';
+      landscape.style.backgroundPosition = '0px -379px';
+    }
+  }
+
+  setCloud() {
+    const cloud = this.element.nativeElement.querySelector('.layer6');
+    if (this.now >= 7 && this.now < 19) {
+        cloud.style.left = 600 - (50 * (this.now - 7)) + 'px';
+        cloud.style.opacity = (this.now - 7) / 10;
+    } else {
+      cloud.style.opacity = 0;
+      cloud.style.left = '600px';
     }
   }
 }

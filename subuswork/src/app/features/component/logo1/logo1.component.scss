@@ -4,14 +4,14 @@
     padding-top: 30px;
     width: 600px;
     margin: auto;
-    transition: .4s all  cubic-bezier(0.18, 0.89, 0.32, 1.28); // component foundation layer
+    transition: .4s all cubic-bezier(0.18, 0.89, 0.32, 1.28); // component foundation layer
     .parent_layer {
         position: absolute;
         height: 140px;
         width: 600px;
         border-radius: 100px;
         overflow: hidden;
-        transition: .4s all  cubic-bezier(0.18, 0.89, 0.32, 1.28);
+        transition: .4s all cubic-bezier(0.18, 0.89, 0.32, 1.28);
     } // layer1 - background gradients initial stylings
     .layer1 {
         position: absolute;
@@ -54,7 +54,7 @@
         transition: top 1s linear, left 1s linear;
         z-index: 3;
     }
-    .layer4{
+    .layer4 {
         position: absolute;
         display: visibile;
         width: 600px;
@@ -67,8 +67,7 @@
         background-repeat: no-repeat;
         background-position: 0px 17px;
     }
-
-    .layer5{
+    .layer5 {
         position: absolute;
         left: calc(50% - 36px);
         top: 13px;
@@ -79,7 +78,19 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 0px -49px;
-        z-index: 6;        
+        z-index: 7;
+    }
+    .layer6 {
+        position: absolute;
+        left: -31px;
+        top: 40px;
+        width: 600px;
+        height: 40px;
+        background: url('../../../../assets/sprites/logo1/cloud.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 3;
+        transition: 1s left linear;
     }
 }
 
@@ -91,14 +102,14 @@
         margin-top: -31px;
         margin-left: 0px;
         margin-right: 0px;
-        transition: .4s all  cubic-bezier(0.18, 0.89, 0.32, 1.28);// component foundation layer
+        transition: .4s all cubic-bezier(0.18, 0.89, 0.32, 1.28); // component foundation layer
         .parent_layer {
             position: absolute;
             height: 140px;
             width: 100%;
             border-radius: 0px;
             overflow: hidden;
-            transition: .4s all  cubic-bezier(0.18, 0.89, 0.32, 1.28);
+            transition: .4s all cubic-bezier(0.18, 0.89, 0.32, 1.28);
         } // layer1 - background gradients initial stylings
         .layer1 {
             position: absolute;
@@ -141,7 +152,7 @@
             transition: top 1s linear, left 1s linear;
             z-index: 3;
         }
-        .layer4{
+        .layer4 {
             position: absolute;
             display: visibile;
             width: 600px;
@@ -154,8 +165,7 @@
             background-repeat: no-repeat;
             background-position: 0px 17px;
         }
-    
-        .layer5{
+        .layer5 {
             position: absolute;
             left: calc(50% - 36px);
             top: 13px;
@@ -166,7 +176,19 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-position: 0px -49px;
-            z-index: 6;        
+            z-index: 6;
+        }
+        .layer6 {
+            position: absolute;
+            left: -31px;
+            top: 40px;
+            width: 600px;
+            height: 40px;
+            background: url('../../../../assets/sprites/logo1/cloud.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: 3;
+            transition: 1s left linear;
         }
     }
 }
