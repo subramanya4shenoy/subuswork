@@ -43,10 +43,10 @@ export class Logo1Component implements OnInit {
   ngOnInit() {
     // this.now = 18;
     this.parentLayer = this.element.nativeElement.querySelector('.parent_layer');
-    this.setSky();
     this.setMoon();
     this.setSun();
     this.setLandscape();
+    this.setSky();
     this.loop();
     this.show = true;
   }
