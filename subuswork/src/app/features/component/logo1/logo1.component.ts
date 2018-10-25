@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef, AfterViewInit } from '@angular/core';
 import * as moment from 'moment';
 
 @Component({
@@ -7,7 +7,7 @@ import * as moment from 'moment';
   styleUrls: ['./logo1.component.scss']
 })
 
-export class Logo1Component implements OnInit {
+export class Logo1Component implements OnInit, AfterViewInit {
 
   private gradients_collection = [
     '#01051D',
@@ -38,22 +38,34 @@ export class Logo1Component implements OnInit {
   private now = parseInt(moment().format('HH'), 10);
   public show = false;
   public parentLayer: any;
+  public sky;
+  public cloud;
+  public sun;
+  public moon;
+  public landscape;
   constructor(public element: ElementRef) { }
 
   ngOnInit() {
-    // this.now = 18;
-    this.parentLayer = this.element.nativeElement.querySelector('.parent_layer');
-    this.setMoon();
-    this.setSun();
-    this.setLandscape();
-    this.setSky();
-    this.loop();
-    this.show = true;
+  }
+
+  ngAfterViewInit() {
+        // this.now = 18;
+        this.parentLayer = this.element.nativeElement.querySelector('.parent_layer');
+        this.sky = this.element.nativeElement.querySelector('.layer1');
+        this.sun = this.element.nativeElement.querySelector('.layer2');
+        this.moon = this.element.nativeElement.querySelector('.layer3');
+        this.landscape = this.element.nativeElement.querySelector('.layer4');
+        this.cloud = this.element.nativeElement.querySelector('.layer6');
+        this.setMoon();
+        this.setSun();
+        this.setLandscape();
+        this.setSky();
+        this.loop();
+        this.show = true;
   }
 
   loop() {
     setInterval(() => {
-      this.parentLayer = this.element.nativeElement.querySelector('.parent_layer');
       this.now++;
       if (this.now === 24) {
         this.now = 0;
@@ -69,69 +81,64 @@ export class Logo1Component implements OnInit {
 
 
   setSky() {
-    const gradient = this.element.nativeElement.querySelector('.layer1');
-    gradient.style.background = this.gradients_collection[this.now];
+    this.sky.style.background = this.gradients_collection[this.now];
   }
 
   setSun() {
-    const sun = this.element.nativeElement.querySelector('.layer2');
     if ((this.now >= 6) && (this.now <= 19)) {
-      sun.style.left = ((this.now - 6) * (this.parentLayer.offsetWidth / 12)) - 20 + 'px';
-      sun.style.top = Math.abs(this.now - 12) * 7 + 'px';
-      sun.style.opacity = 1;
+      this.sun.style.left = ((this.now - 6) * (this.parentLayer.offsetWidth / 12)) - 20 + 'px';
+      this.sun.style.top = Math.abs(this.now - 12) * 7 + 'px';
+      this.sun.style.opacity = 1;
     } else {
-      sun.style.opacity = 0;
-      sun.style.left = '-40px';
-      sun.style.top = '40px';
+      this.sun.style.opacity = 0;
+      this.sun.style.left = '-40px';
+      this.sun.style.top = '40px';
     }
   }
 
   setMoon() {
-    const moon = this.element.nativeElement.querySelector('.layer3');
     if ((this.now <= 6) || (this.now >= 19)) {
       if (this.now <= 6) {
-        moon.style.top = this.now * 7 + 'px';
-        moon.style.left = ((this.now + 6) * (this.parentLayer.offsetWidth / 12)) - 20 + 'px';
-        moon.style.opacity = 1;
+        this.moon.style.top = this.now * 7 + 'px';
+        this.moon.style.left = ((this.now + 6) * (this.parentLayer.offsetWidth / 12)) - 20 + 'px';
+        this.moon.style.opacity = 1;
       } else {
-        moon.style.opacity = 1;
-        moon.style.top = Math.abs(this.now - 23) * 7 + 'px';
-        moon.style.left = ((this.now - 19) * (this.parentLayer.offsetWidth / 12)) + 20 + 'px';
+        this.moon.style.opacity = 1;
+        this.moon.style.top = Math.abs(this.now - 23) * 7 + 'px';
+        this.moon.style.left = ((this.now - 19) * (this.parentLayer.offsetWidth / 12)) + 20 + 'px';
       }
     } else {
-      moon.style.opacity = 0;
-      moon.style.left = '-40px';
-      moon.style.top = '40px';
+      this.moon.style.opacity = 0;
+      this.moon.style.left = '-40px';
+      this.moon.style.top = '40px';
     }
   }
 
   setLandscape() {
-    const landscape = this.element.nativeElement.querySelector('.layer4');
     if (this.now <= 6) {
-      landscape.style.backgroundPosition = '0px -379px';
+      this.landscape.style.backgroundPosition = '0px -379px';
     } else if (this.now === 7) {
-      landscape.style.backgroundPosition = '0px -379px';
+      this.landscape.style.backgroundPosition = '0px -379px';
     } else if (this.now === 8) {
-      landscape.style.backgroundPosition = '0px -99px';
+      this.landscape.style.backgroundPosition = '0px -99px';
     } else if (this.now <= 17) {
-      landscape.style.backgroundPosition = '0px 40px';
+      this.landscape.style.backgroundPosition = '0px 40px';
     } else if (this.now < 20) {
-      landscape.style.backgroundPosition = '0px -239px';
+      this.landscape.style.backgroundPosition = '0px -239px';
     } else if (this.now <= 22) {
-      landscape.style.backgroundPosition = '0px -379px';
+      this.landscape.style.backgroundPosition = '0px -379px';
     } else {
-      landscape.style.backgroundPosition = '0px -379px';
+      this.landscape.style.backgroundPosition = '0px -379px';
     }
   }
 
   setCloud() {
-    const cloud = this.element.nativeElement.querySelector('.layer6');
     if (this.now >= 7 && this.now < 19) {
-        cloud.style.left = 600 - (50 * (this.now - 7)) + 'px';
-        cloud.style.opacity = Math.abs((this.now - 7)) / 10;
+        this.cloud.style.left = 600 - (50 * (this.now - 7)) + 'px';
+        this.cloud.style.opacity = Math.abs((this.now - 7)) / 10 + .2;
     } else {
-      cloud.style.opacity = 0;
-      cloud.style.left = '600px';
+      this.cloud.style.opacity = 0;
+      this.cloud.style.left = '600px';
     }
   }
 }
