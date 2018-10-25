@@ -19,7 +19,6 @@
         top: 0;
         width: 100%;
         height: 100%;
-        z-index: 1;
         background: #011133;
         transition: 1s all linear;
         z-index: 1;
@@ -90,7 +89,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         z-index: 3;
-        transition: 1s left linear;
+        transition: .4s opacity linear;
     }
 }
 
@@ -117,7 +116,6 @@
             top: 0;
             width: 100%;
             height: 100%;
-            z-index: 1;
             background: #011133;
             transition: 1s all linear;
             z-index: 1;
@@ -188,7 +186,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             z-index: 3;
-            transition: 1s left linear;
+            transition: .4s opacity linear;
         }
     }
 }

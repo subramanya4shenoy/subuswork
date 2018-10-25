@@ -60,8 +60,8 @@ export class Logo1Component implements OnInit, AfterViewInit {
         this.setSun();
         this.setLandscape();
         this.setSky();
-        this.loop();
         this.show = true;
+        this.loop();
   }
 
   loop() {
@@ -71,11 +71,10 @@ export class Logo1Component implements OnInit, AfterViewInit {
         this.now = 0;
       }
       this.setSky();
-      this.setMoon();
-      this.setSun();
       this.setCloud();
       this.setLandscape();
-      this.show = true;
+      this.setMoon();
+      this.setSun();
     }, 1000);
   }
 
@@ -133,12 +132,14 @@ export class Logo1Component implements OnInit, AfterViewInit {
   }
 
   setCloud() {
-    if (this.now >= 7 && this.now < 19) {
-        this.cloud.style.left = 600 - (50 * (this.now - 7)) + 'px';
-        this.cloud.style.opacity = Math.abs((this.now - 7)) / 10 + .2;
+    if ((this.now >= 7) && (this.now <= 19)) {
+        this.cloud.style.opacity = Math.abs((this.now - 7)) / 10 ;
     } else {
       this.cloud.style.opacity = 0;
-      this.cloud.style.left = '600px';
     }
   }
+
+  // setStar(){
+
+  // }
 }
