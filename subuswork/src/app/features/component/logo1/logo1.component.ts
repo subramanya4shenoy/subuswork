@@ -47,8 +47,8 @@ export class Logo1Component implements OnInit {
     this.setMoon();
     this.setSun();
     this.setLandscape();
-    this.show = true;
     this.loop();
+    this.show = true;
   }
 
   loop() {
@@ -128,7 +128,7 @@ export class Logo1Component implements OnInit {
     const cloud = this.element.nativeElement.querySelector('.layer6');
     if (this.now >= 7 && this.now < 19) {
         cloud.style.left = 600 - (50 * (this.now - 7)) + 'px';
-        cloud.style.opacity = (this.now - 7) / 10;
+        cloud.style.opacity = Math.abs((this.now - 7)) / 10;
     } else {
       cloud.style.opacity = 0;
       cloud.style.left = '600px';
