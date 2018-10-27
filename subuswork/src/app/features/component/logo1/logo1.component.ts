@@ -130,7 +130,7 @@ export class Logo1Component implements OnInit, AfterViewInit, OnDestroy {
     } else if (this.now === 8) {
       this.landscape.style.backgroundPosition = '0px -99px';
     } else if (this.now <= 17) {
-      this.landscape.style.backgroundPosition = '0px 40px';
+      this.landscape.style.backgroundPosition = '0px 41px';
     } else if (this.now < 20) {
       this.landscape.style.backgroundPosition = '0px -239px';
     } else if (this.now <= 22) {
