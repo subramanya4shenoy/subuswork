@@ -66,8 +66,6 @@ export class Logo1Component implements OnInit, AfterViewInit, OnDestroy {
     this.landscape = this.element.nativeElement.querySelector('.layer4');
     this.cloud = this.element.nativeElement.querySelector('.layer6');
     this.star = this.element.nativeElement.querySelector('.layer7');
-    this.show = true;
-    this.cdr.detectChanges();
     this.setView();
   }
 
@@ -78,14 +76,16 @@ export class Logo1Component implements OnInit, AfterViewInit, OnDestroy {
   }
 
   setView() {
+    this.setLandscape();
+    this.setCloud();
     setTimeout(() => {
+      this.setSky();
+      this.setStar();
       this.setMoon();
       this.setSun();
-      this.setLandscape();
-      this.setSky();
-      this.setCloud();
-      this.setStar();
-    }, 1000);
+    }, 900);
+    this.show = true;
+    this.cdr.detectChanges();
   }
 
   setSky() {
