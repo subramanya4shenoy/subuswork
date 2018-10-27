@@ -1,4 +1,5 @@
-import { Component, OnInit, ElementRef, AfterViewInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ChangeDetectorRef, SimpleChange, AfterViewInit, OnDestroy } from '@angular/core';
+
 import * as moment from 'moment';
 
 @Component({
@@ -7,7 +8,8 @@ import * as moment from 'moment';
   styleUrls: ['./logo1.component.scss']
 })
 
-export class Logo1Component implements OnInit, AfterViewInit {
+export class Logo1Component implements OnInit, AfterViewInit, OnDestroy {
+
 
   private gradients_collection = [
     '#01051D',
@@ -35,49 +37,56 @@ export class Logo1Component implements OnInit, AfterViewInit {
     '#01051D',
     '#01051D'
   ];
-  private now = parseInt(moment().format('HH'), 10);
-  public show = false;
+  private now;
+  private timer;
+  public show: boolean;
   public parentLayer: any;
   public sky;
   public cloud;
   public sun;
   public moon;
   public landscape;
-  constructor(public element: ElementRef) { }
+  public star;
+  constructor(public element: ElementRef,
+              private cdr: ChangeDetectorRef) { }
 
   ngOnInit() {
+    this.show = false;
+    this.now = parseInt(moment().format('HH'), 10);
+    this.timer = setInterval(() => {
+      this.now = parseInt(moment().format('HH'), 10);
+      }, 10000);
   }
 
   ngAfterViewInit() {
-        // this.now = 18;
-        this.parentLayer = this.element.nativeElement.querySelector('.parent_layer');
-        this.sky = this.element.nativeElement.querySelector('.layer1');
-        this.sun = this.element.nativeElement.querySelector('.layer2');
-        this.moon = this.element.nativeElement.querySelector('.layer3');
-        this.landscape = this.element.nativeElement.querySelector('.layer4');
-        this.cloud = this.element.nativeElement.querySelector('.layer6');
-        this.setMoon();
-        this.setSun();
-        this.setLandscape();
-        this.setSky();
-        this.show = true;
-        this.loop();
+    this.parentLayer = this.element.nativeElement.querySelector('.parent_layer');
+    this.sky = this.element.nativeElement.querySelector('.layer1');
+    this.sun = this.element.nativeElement.querySelector('.layer2');
+    this.moon = this.element.nativeElement.querySelector('.layer3');
+    this.landscape = this.element.nativeElement.querySelector('.layer4');
+    this.cloud = this.element.nativeElement.querySelector('.layer6');
+    this.star = this.element.nativeElement.querySelector('.layer7');
+    this.show = true;
+    this.cdr.detectChanges();
+    this.setView();
   }
 
-  loop() {
-    setInterval(() => {
-      this.now++;
-      if (this.now === 24) {
-        this.now = 0;
-      }
-      this.setSky();
-      this.setCloud();
-      this.setLandscape();
+  ngOnchanges(changes: SimpleChange) {
+    if (changes['now']) {
+        console.log(changes, changes['now']);
+    }
+  }
+
+  setView() {
+    setTimeout(() => {
       this.setMoon();
       this.setSun();
+      this.setLandscape();
+      this.setSky();
+      this.setCloud();
+      this.setStar();
     }, 1000);
   }
-
 
   setSky() {
     this.sky.style.background = this.gradients_collection[this.now];
@@ -133,13 +142,25 @@ export class Logo1Component implements OnInit, AfterViewInit {
 
   setCloud() {
     if ((this.now >= 7) && (this.now <= 19)) {
-        this.cloud.style.opacity = Math.abs((this.now - 7)) / 10 ;
+      this.cloud.style.opacity = Math.abs((this.now - 7)) / 10;
     } else {
       this.cloud.style.opacity = 0;
     }
   }
 
-  // setStar(){
+  setStar() {
+    if ((this.now < 7) || (this.now >= 19)) {
+      this.star.style.opacity = Math.abs((this.now - 7)) / 10;
+    } else {
+      this.star.style.opacity = 0;
+    }
+  }
 
-  // }
+  ngOnDestroy() {
+    if (this.timer) {
+      clearInterval(this.timer);
+    }
+  }
+
 }
+

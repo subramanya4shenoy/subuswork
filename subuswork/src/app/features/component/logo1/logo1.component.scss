@@ -89,7 +89,19 @@
         background-size: cover;
         background-repeat: no-repeat;
         z-index: 3;
-        transition: .4s opacity linear;
+        opacity: 0;
+        transition: 1s opacity linear;
+    }
+    .layer7 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 600px;
+        height: 140px;
+        background: url('../../../../assets/sprites/logo1/star.png');
+        background-size: cover;
+        z-index: 1;
+        transition: 1s opacity Linear;
     }
 }
 
@@ -186,7 +198,20 @@
             background-size: cover;
             background-repeat: no-repeat;
             z-index: 3;
-            transition: .4s opacity linear;
+            opacity: 0;
+            transition: 1s opacity linear;
+        }
+
+        .layer7 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 600px;
+            height: 140px;
+            background: url('../../../../assets/sprites/logo1/star.png');
+            background-size: cover;
+            z-index: 1;
+            transition: 1s opacity Linear;
         }
     }
 }
