@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./side-menu.component.scss']
 })
 export class SideMenuComponent implements OnInit {
+  public selectedMenu: string;
 
   constructor() { }
 
   ngOnInit() {
+    this.selectedMenu = 'Home';
+  }
+
+  changeMenu(menu: string) {
+    this.selectedMenu = menu;
   }
 
 }
