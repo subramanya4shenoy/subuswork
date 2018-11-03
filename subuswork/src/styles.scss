@@ -7,3 +7,13 @@ body,p,span{
 .pointer {
     cursor: pointer;
 }
+
+@font-face {
+    font-family: "titleFont";
+    src: url('assets/fonts/Hammersmith_One/HammersmithOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: "contentFont";
+    src: url('assets/fonts/Questrial/Questrial-Regular.ttf');
+}

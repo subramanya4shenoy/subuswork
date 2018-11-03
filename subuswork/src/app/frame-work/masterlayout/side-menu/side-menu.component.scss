@@ -1,3 +1,5 @@
+@import "../../../app.component.scss";
+
 .menu-bar {
     width: 300px;
     height: 100%;
@@ -11,12 +13,14 @@
         text-align: center;
         .menu-name {
             display: none;
-            width: 85%;
+            width: 34px;
             margin: auto;
-            line-height: 2px;
+            line-height: 7px;
             font-size: 13px;
             letter-spacing: 1px;
-            text-transform: capitalize;
+            text-transform: uppercase;
+            font-family: titleFont;
+            text-align: center;
         }
         .menu-name-active{
             display: block;
