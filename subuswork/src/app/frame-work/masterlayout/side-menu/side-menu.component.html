@@ -1,32 +1,32 @@
 <div class="menu-bar">
     <div class="menu" (click)="changeMenu('Home')">
         <div class="item item1" [ngClass]="{'item1-active': selectedMenu=='Home'}">
-            <img src="../../../../assets/icons/line-chart.svg" alt="H">
+            <img src="../../../../assets/icons/line-chart.svg" alt="Home">
         </div>
-        <div class="menu-name" [ngClass]="{'menu-name-active': selectedMenu=='Home'}">home</div>
+        <div class="menu-name pointer" [ngClass]="{'menu-name-active': selectedMenu=='Home'}">home</div>
     </div>
     <div class="menu" (click)="changeMenu('Element')">
         <div class="item item2" [ngClass]="{'item2-active': selectedMenu=='Element'}">
-            <img src="../../../../assets/icons/dice.svg" alt="E">
+            <img src="../../../../assets/icons/dice.svg" alt="Element">
         </div>
-        <div class="menu-name" [ngClass]="{'menu-name-active': selectedMenu=='Element'}"> &lt; /&gt;</div>
+        <div class="menu-name pointer" [ngClass]="{'menu-name-active': selectedMenu=='Element'}"> &lt; /&gt;</div>
     </div>
     <div class="menu" (click)="changeMenu('logo')">
         <div class="item item3" [ngClass]="{'item3-active': selectedMenu=='logo'}">
-            <img src="../../../../assets/icons/poop.svg" alt="L">
+            <img src="../../../../assets/icons/poop.svg" alt="logo">
         </div>
-        <div class="menu-name" [ngClass]="{'menu-name-active': selectedMenu=='logo'}">logo</div>
+        <div class="menu-name pointer" [ngClass]="{'menu-name-active': selectedMenu=='logo'}">logo</div>
     </div>
     <div class="menu" (click)="changeMenu('Project')">
         <div class="item item4" [ngClass]="{'item4-active': selectedMenu=='Project'}">
-            <img src="../../../../assets/icons/start.svg" alt="P">
+            <img src="../../../../assets/icons/start.svg" alt="Project">
         </div>
-        <div class="menu-name" [ngClass]="{'menu-name-active': selectedMenu=='Project'}">Project</div>
+        <div class="menu-name pointer" [ngClass]="{'menu-name-active': selectedMenu=='Project'}">Project</div>
     </div>
     <div class="menu" (click)="changeMenu('About')">
         <div class="item item5" [ngClass]="{'item5-active': selectedMenu=='About'}">
             <img src="../../../../assets/icons/coffee-cup.svg" alt="A">
         </div>
-        <div class="menu-name" [ngClass]="{'menu-name-active': selectedMenu=='About'}">About</div>
+        <div class="menu-name pointer" [ngClass]="{'menu-name-active': selectedMenu=='About'}">About</div>
     </div>
 </div>
