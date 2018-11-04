@@ -8,10 +8,7 @@
     }
     .content {
         background-color: #fff;
-        border: 1px solid #f1f1f1;
-        min-height: calc( 100vh - 220px);
-        border-radius: 7px;
-        box-shadow: 0 3px 6px rgba(201, 201, 201, 0.16), 0 3px 6px rgba(201, 201, 201, 0.16);
+        // min-height: calc( 100vh - 220px);
         margin: auto;
     }
 }
@@ -21,9 +18,7 @@
         width: 100%;
 
         .content {
-            background-color: #21D4FD;
-            background-image: linear-gradient(265deg, #21D4FD 0%, #B721FF 100%);
-            min-height: calc( 100vh - 160px);
+            // min-height: calc( 100vh - 160px);
             width: 100%;
             margin: auto;
         }

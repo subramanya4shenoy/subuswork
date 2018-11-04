@@ -1,7 +1,7 @@
 // component wrapper
 .logo1 {
     height: 140px;
-    padding-top: 30px;
+    padding-top: 20px;
     width: 600px;
     margin: auto;
     transition: .4s all cubic-bezier(0.18, 0.89, 0.32, 1.28); // component foundation layer
@@ -108,7 +108,6 @@
 @media only screen and (max-width: 600px) {
     .logo1 {
         height: 140px;
-        padding-top: 30px;
         width: 100%;
         margin-top: -31px;
         margin-left: 0px;

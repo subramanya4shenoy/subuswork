@@ -5,6 +5,11 @@ import { TopBarComponent } from './masterlayout/top-bar/top-bar.component';
 import { MainRiverComponent } from './masterlayout/main-river/main-river.component';
 import { SideMenuComponent } from './masterlayout/side-menu/side-menu.component';
 import { Logo1Component } from '../features/component/logo1/logo1.component';
+import { HomeContentComponent } from './components/home-content/home-content.component';
+import { ElementContentComponent } from './components/element-content/element-content.component';
+import { LogoContentComponent } from './components/logo-content/logo-content.component';
+import { ExtraContentComponent } from './components/extra-content/extra-content.component';
+import { AboutContentComponent } from './components/about-content/about-content.component';
 
 @NgModule({
   imports: [
@@ -15,7 +20,12 @@ import { Logo1Component } from '../features/component/logo1/logo1.component';
     TopBarComponent,
     MainRiverComponent,
     SideMenuComponent,
-    Logo1Component
+    Logo1Component,
+    HomeContentComponent,
+    ElementContentComponent,
+    LogoContentComponent,
+    ExtraContentComponent,
+    AboutContentComponent
   ],
   exports: [
     MasterlayoutComponent

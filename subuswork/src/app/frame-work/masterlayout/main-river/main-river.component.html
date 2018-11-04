@@ -1,11 +1,13 @@
 <div class="main-river">    
     <div class="top-menu">
-        <app-side-menu></app-side-menu>
+        <app-side-menu (menu)="changeView($event)"></app-side-menu>
     </div>
     
     <div class="content">
-        <div class="side-nav">
-        </div>
-        <div class="content-river"></div>
+        <app-home-content *ngIf="view == 'home'"></app-home-content>
+        <app-element-content *ngIf="view == 'element'"></app-element-content>
+        <app-logo-content *ngIf="view == 'logo'"></app-logo-content>
+        <app-extra-content *ngIf="view == 'extra'"></app-extra-content>
+        <app-about-content *ngIf="view == 'about'"></app-about-content>
     </div>
 </div>

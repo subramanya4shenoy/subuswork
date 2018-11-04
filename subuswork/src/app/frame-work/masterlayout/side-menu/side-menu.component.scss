@@ -9,26 +9,32 @@
     }
     .menu {
         float: left;
-        height: 50px;
+        height: 60px;
         text-align: center;
+        overflow: hidden;
         .menu-name {
-            display: none;
+            visibility: hidden;
             width: 34px;
             margin: auto;
-            line-height: 7px;
+            line-height: 61px;
             font-size: 13px;
             letter-spacing: 1px;
             text-transform: uppercase;
             font-family: titleFont;
             text-align: center;
+            transition: .3s all linear;
         }
         .menu-name-active{
-            display: block;
+            visibility: visible;
+            line-height: 7px;
+            transition: .3s all linear;
         }
     }
     .menu:hover {
         .menu-name {
-            display: block;
+            visibility: visible;
+            line-height: 7px;
+            transition: .3s all linear;
         }
     }
     .item {
