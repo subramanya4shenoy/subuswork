@@ -38,16 +38,14 @@
                 img {
                     width: 100%;
                     height: 100%;
-                    filter: grayscale(100);
                 }
             }
         }
-        .profile-detail{
+        .profile-detail {
             float: right;
             width: 57%;
             padding: 15px 0px;
-
-            .profile-info{
+            .profile-info {
                 font-family: "contentfont";
                 font-size: 18px;
                 line-height: 38px;
@@ -55,28 +53,38 @@
             }
         }
     }
-    .purpose-section{
-        width: 600px;
-        margin: auto;
-        .title{
-            font-family: "titlefont";
-            font-size: 29px;
-            text-transform: uppercase;
-            margin-top: 20px;
-            text-align: center; 
-        }
-        .content{
-            font-family: contentfont;
-            font-size: 20px;
-            line-height: 40px;
-            text-align: center;
-            margin-top: 20px;
+    .social-connect {
+        .social-icon-list {
+            width: 350px;
+            height: 50px;
+            margin: auto;
+            .social-icon {
+                float: left;
+                height: 50px;
+                text-align: center;
+                overflow: hidden;
+                .icon {
+                    float: left;
+                    background: #f1f1f1;
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    margin: 7px 20px;
+                    cursor: pointer;
+                    transition: .4s all linear;
+                }
+                .icon-yt{
+                    cursor: default;
+                    pointer-events: none;
+                    opacity: 0.3;
+                }
+            }
         }
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .about{
+    .about {
         .about-section {
             width: 100%;
             .profile-pic-area {
@@ -100,22 +108,20 @@
                     height: 144px;
                     border-radius: 50%;
                     overflow: hidden;
-                    margin-top: 4px;
-                    margin-left: calc(50% - 85px);
+                    margin-top: 3px;
+                    margin-left: calc(50% - 82px);
                     border-width: 13px;
                     border: 10px solid #ffffff80;
                     img {
                         width: 100%;
                         height: 100%;
-                        filter: grayscale(100);
                     }
                 }
             }
-            .profile-detail{
+            .profile-detail {
                 width: 100%;
                 padding: 15px 0px;
-    
-                .profile-info{
+                .profile-info {
                     font-family: "contentfont";
                     font-size: 18px;
                     line-height: 38px;
@@ -123,8 +129,7 @@
                 }
             }
         }
-
-        .purpose-section{
+        .social-connect {
             width: 100%;
         }
     }
