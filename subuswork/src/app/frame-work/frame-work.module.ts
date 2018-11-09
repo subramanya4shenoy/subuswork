@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MasteConfig } from './config/master.config';
 import { MasterlayoutComponent } from './masterlayout/masterlayout.component';
 import { TopBarComponent } from './masterlayout/top-bar/top-bar.component';
 import { MainRiverComponent } from './masterlayout/main-river/main-river.component';
@@ -17,7 +16,6 @@ import { AboutContentComponent } from './components/about-content/about-content.
     CommonModule
   ],
   declarations: [
-    MasteConfig,
     MasterlayoutComponent,
     TopBarComponent,
     MainRiverComponent,
