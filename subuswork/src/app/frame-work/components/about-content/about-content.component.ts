@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireStorage, AngularFireStorageReference } from 'angularfire2/storage';
+
 
 @Component({
   selector: 'app-about-content',
@@ -7,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutContentComponent implements OnInit {
 
-  constructor() { }
+  public ref: AngularFireStorageReference;
+
+  constructor(private afStorage: AngularFireStorage) { }
 
   ngOnInit() {
   }

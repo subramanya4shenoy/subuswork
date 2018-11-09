@@ -1,8 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
-
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireStorageModule } from 'angularfire2/storage';
 import { FrameWorkModule } from './frame-work/frame-work.module';
 import { AppComponent } from './app.component';
 
@@ -11,8 +10,14 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    AngularFontAwesomeModule,
     BrowserModule,
+    AngularFireModule.initializeApp({
+      apiKey: 'AIzaSyBi3XOyybCRzwewmrZ1lCqExnVATtgi7oc',
+      authDomain: 'subuswork.firebaseapp.com',
+      projectId: 'subuswork',
+      storageBucket: 'subuswork.appspot.com'
+    }),
+    AngularFireStorageModule,
     FrameWorkModule
   ],
   providers: [],
