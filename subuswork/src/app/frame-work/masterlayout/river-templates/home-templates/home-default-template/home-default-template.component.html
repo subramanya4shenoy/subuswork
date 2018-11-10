@@ -1,27 +1,43 @@
 <div class="home-template">
-  <div class="banner">
+  <div class="banner" *ngFor="let feed of feeds">
+    <div class="banner-image">
+      <img src={{feed.feature_img_url}} alt="">
+    </div>
+    <div class="banner-text-area" [ngStyle]="{'background': feed.feature_banner_style.background , 'color': feed.feature_banner_style.color}">
+      <div class="banner-text">{{feed.feature_description}}</div>
+      <div class="banner-small-text">{{feed.feature_short_description}}</div>
+    </div>
+  </div>
+
+  <!-- <div class="banner">
     <div class="banner-image">
       <img src="https://ampa.lifo.gr/wp-content/uploads/2018/08/bored.jpg" alt="">
     </div>
     <div class="banner-text-area">
-      <div class="banner-text"> Above images are from internet Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vero at assumenda voluptatibus recusandae quod explicabo atque nihil nisi hic quos officiis, dolores enim, dolorum voluptate, perferendis dolore obcaecati amet! </div>
+      <div class="banner-text"> Above images are from internet Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vero at assumenda voluptatibus
+        recusandae quod explicabo atque nihil nisi hic quos officiis, dolores enim, dolorum voluptate, perferendis dolore
+        obcaecati amet! </div>
     </div>
   </div>
   <div class="banner">
-      <div class="banner-image">
-          <img src="http://www.realat.lv/wp-content/uploads/2017/05/pivot-and-pilot-creative-viewing.gif" alt="">
-      </div>
-      <div class="banner-text-area">
-        <div class="banner-text"> Above images are from internet Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vero at assumenda voluptatibus recusandae quod explicabo atque nihil nisi hic quos officiis, dolores enim, dolorum voluptate, perferendis dolore obcaecati amet! </div>
-      </div>
+    <div class="banner-image">
+      <img src="http://www.realat.lv/wp-content/uploads/2017/05/pivot-and-pilot-creative-viewing.gif" alt="">
     </div>
-    <div class="banner">
-        <div class="banner-image">
-            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/5eca0a59752143.5a392f2aed603.gif" alt="">
-        </div>
-        <div class="banner-text-area">
-          <div class="banner-text"> Above images are from internet Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vero at assumenda voluptatibus recusandae quod explicabo atque nihil nisi hic quos officiis, dolores enim, dolorum voluptate, perferendis dolore obcaecati amet! </div>
-        </div>
-      </div>
+    <div class="banner-text-area">
+      <div class="banner-text"> Above images are from internet Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vero at assumenda voluptatibus
+        recusandae quod explicabo atque nihil nisi hic quos officiis, dolores enim, dolorum voluptate, perferendis dolore
+        obcaecati amet! </div>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="banner-image">
+      <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/5eca0a59752143.5a392f2aed603.gif" alt="">
+    </div>
+    <div class="banner-text-area">
+      <div class="banner-text"> Above images are from internet Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vero at assumenda voluptatibus
+        recusandae quod explicabo atque nihil nisi hic quos officiis, dolores enim, dolorum voluptate, perferendis dolore
+        obcaecati amet! </div>
+    </div>
+  </div> -->
 
 </div>
