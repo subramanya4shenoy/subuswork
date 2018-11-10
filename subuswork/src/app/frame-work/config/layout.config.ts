@@ -1,5 +1,5 @@
 export const LayoutConfig = {
-    showLogo: true,
+    showMenu: true,
     icon_firebase_BASEURL: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/framework%2Ficons%2Fmenu%2F',
     menus: [
         {

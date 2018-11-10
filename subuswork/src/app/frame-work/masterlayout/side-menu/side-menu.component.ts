@@ -13,6 +13,7 @@ export class SideMenuComponent implements OnInit {
   public menu: EventEmitter<string> = new EventEmitter();
 
   public selectedMenu: string;
+  public shouldShowMenu = MasterConfig.layoutConfig.showMenu;
   public menuList = MasterConfig.layoutConfig.menus;
   private baseURl = MasterConfig.layoutConfig.icon_firebase_BASEURL;
 

@@ -1,12 +1,12 @@
-<div class="menu-bar">
+<div class="menu-bar" *ngIf="shouldShowMenu">
 
     <div *ngFor="let menu of menuList">
-        <div class="menu" (click)="changeMenu(menu.menu_string)">
-            <div class="item  + {{ menu.menu_classes}} " [ngClass]="(selectedMenu === menu.menu_title) ? (menu.menu_active_class + '') : ''">
+        <div class="menu" (click)="changeMenu(menu.menu_string)" *ngIf="menu.menu_ShouldShow">
+            <div class="item  + {{ menu.menu_classes}} " [ngClass]="(selectedMenu === menu.menu_string) ? (menu.menu_active_class + '') : ''">
                 <img src="{{baseURl}}{{menu.menu_icon_url}}"
-                    alt="menu.menu_title">
+                    alt="menu.menu_string">
             </div>
-            <div class="menu-name pointer" [ngClass]="{'menu-name-active': selectedMenu==menu.menu_title}">{{menu.menu_title}}</div>
+            <div class="menu-name pointer" [ngClass]="{'menu-name-active': selectedMenu === menu.menu_string}">{{menu.menu_title}}</div>
         </div>
     </div>
 </div>
