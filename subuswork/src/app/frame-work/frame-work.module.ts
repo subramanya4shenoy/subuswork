@@ -11,6 +11,7 @@ import { LogoContentComponent } from './components/logo-content/logo-content.com
 import { ExtraContentComponent } from './components/extra-content/extra-content.component';
 import { AboutContentComponent } from './components/about-content/about-content.component';
 import { SocialConnectBarComponent } from './components/social-connect-bar/social-connect-bar.component';
+import { HomeDefaultTemplateComponent } from './masterlayout/river-templates/home-templates/home-default-template/home-default-template.component';
 
 @NgModule({
   imports: [
@@ -27,7 +28,8 @@ import { SocialConnectBarComponent } from './components/social-connect-bar/socia
     LogoContentComponent,
     ExtraContentComponent,
     AboutContentComponent,
-    SocialConnectBarComponent
+    SocialConnectBarComponent,
+    HomeDefaultTemplateComponent
   ],
   exports: [
     MasterlayoutComponent

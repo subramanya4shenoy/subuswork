@@ -8,13 +8,15 @@ export const ViewConfig = {
     home: {
         isActive : true,
         show_title: true,
+        show_message: true,
         route_link: '',
-        title: 'home',
+        title: 'Timeline',
         config: HomeConfig
     },
     element: {
         isActive : true,
         show_title: true,
+        show_message: true,
         route_link: '',
         title: 'element',
         config: ElementConfig
@@ -22,6 +24,7 @@ export const ViewConfig = {
     logo: {
         isActive : true,
         show_title: true,
+        show_message: true,
         route_link: '',
         title: 'logo',
         config: LogoConfig
@@ -29,6 +32,7 @@ export const ViewConfig = {
     extra: {
         isActive : true,
         show_title: true,
+        show_message: true,
         route_link: '',
         title: 'extra',
         config: ExtraConfig
@@ -36,6 +40,7 @@ export const ViewConfig = {
     about: {
         isActive : true,
         show_title: true,
+        show_message: true,
         route_link: '',
         title: 'about',
         config: AboutConfig

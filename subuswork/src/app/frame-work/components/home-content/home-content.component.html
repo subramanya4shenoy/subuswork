@@ -1,10 +1,11 @@
-<div class="timeline">
-  <div class="title">
-    Timeline
+<div class="timeline" *ngIf="view.isActive">
+  <div class="title" *ngIf="view.show_title">
+    {{view.title}}
   </div>
-  <div class="temp-info">
-    This site is still under construction. Frame work is still in progress. Experimenting multiple UI/UX elements. 
-    This will be in shape very soon and will be rolling out very interesting, creative contents soon. <br>
-    - Love
+  <div class="temp-info" *ngIf="view.show_message">
+    {{view.config.message}}
+  </div>
+  <div class="feed-area">
+      <app-home-default-template></app-home-default-template>
   </div>
 </div>
