@@ -32,10 +32,10 @@ export const FeaturesList = {
             feature_category: 'element',
             feature_type: 'image',
             feature_banner_style: {
-                'color': '#e6dbd4',
-                'background': '#131723'
+                'color': '#e19c2c',
+                'background': '#001424'
             },
-            feature_img_url: 'https://ampa.lifo.gr/wp-content/uploads/2018/08/bored.jpg',
+            feature_img_url: 'https://thumbs.gfycat.com/BaggyHonoredErmine-size_restricted.gif',
             feature_description: 'Above images are from internet Lorem ipsum dolor sit amet consectetur adipisicing elit.\
                                   Autem vero at assumenda voluptatibus recusandae quod explicabo atque nihil nisi hic quos officiis,\
                                   dolores enim, dolorum voluptate, perferendis dolore obcaecati amet! ',
