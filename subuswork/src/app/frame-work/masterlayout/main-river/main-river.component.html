@@ -8,6 +8,6 @@
         <app-element-content *ngIf="view == 'element'"></app-element-content>
         <app-logo-content *ngIf="view == 'logo'"></app-logo-content>
         <app-extra-content *ngIf="view == 'extra'"></app-extra-content>
-        <app-about-content *ngIf="view == 'about'"></app-about-content>
+        <app-about-content [hidden]="view !== 'about'"></app-about-content>
     </div>
 </div>

@@ -53,34 +53,6 @@
             }
         }
     }
-    .social-connect {
-        .social-icon-list {
-            width: 350px;
-            height: 50px;
-            margin: auto;
-            .social-icon {
-                float: left;
-                height: 50px;
-                text-align: center;
-                overflow: hidden;
-                .icon {
-                    float: left;
-                    background: #f1f1f1;
-                    border-radius: 50%;
-                    width: 30px;
-                    height: 30px;
-                    margin: 7px 20px;
-                    cursor: pointer;
-                    transition: .4s all linear;
-                }
-                .icon-yt{
-                    cursor: default;
-                    pointer-events: none;
-                    opacity: 0.3;
-                }
-            }
-        }
-    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -128,9 +100,6 @@
                     text-align: center;
                 }
             }
-        }
-        .social-connect {
-            width: 100%;
         }
     }
 }

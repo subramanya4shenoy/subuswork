@@ -1,55 +1,22 @@
-<div class="about">
-  <div class="title">
-    about
+<div class="about" *ngIf="view.isActive">
+  <div class="title" *ngIf="view.show_title">
+    {{view.title}}
   </div>
   <!-- Static content below -->
   <div class="about-section">
     <div class="profile-pic-area">
       <div class="profile-pic-layer1"></div>
       <div class="profile-pic-layer2">
-        <img src="../../../../assets/image/dp.jpg" alt="Subramanya Shenoy">
+        <img src="{{view.config.defaultContent.profile_img_url}}" alt="Subramanya Shenoy">
       </div>
     </div>
     <div class="profile-detail">
       <div class="profile-info">
-        Subramanya Shenoy
-        <br> Better designer than a developer,
-        <br> Better developer than a designer.
-        <br> Loves designing and developing UI/UX.
+        {{view.config.defaultContent.profile_name}}
         <br>
-      </div>
-      <div class="profile-social-connect">
-
+        <span *ngFor='let desc of view.config.defaultContent.profile_content'>{{desc}}<br></span>
       </div>
     </div>
   </div>
-  <div class="social-connect">
-    <div class="social-icon-list">
-      <div class="social-icon">
-        <div class="icon icon-insta" (click)="redirectTo('instagram')">
-          <img src="../../../../assets/icons/instagram.svg" alt="Instageam">
-        </div>
-      </div>
-      <div class="social-icon">
-        <div class="icon icon-fb" (click)="redirectTo('facebook')" >
-          <img src="../../../../assets/icons/facebook.svg" alt="Facebook">
-        </div>
-      </div>
-      <div class="social-icon">
-        <div class="icon icon-ln" (click)="redirectTo('linkedin')" >
-          <img src="../../../../assets/icons/linkedin.svg" alt="LinkedIn">
-        </div>
-      </div>
-      <div class="social-icon">
-        <div class="icon icon-yt" (click)="redirectTo('youtube')" >
-          <img src="../../../../assets/icons/youtube.svg" alt="Youtube">
-        </div>
-      </div>
-      <div class="social-icon">
-        <div class="icon icon-git" (click)="redirectTo('git')" >
-          <img src="../../../../assets/icons/git.svg" alt="Git">
-        </div>
-      </div>
-    </div>
-  </div>
+  <app-social-connect-bar *ngIf='view.config.show_solcial_link'></app-social-connect-bar>
 </div>

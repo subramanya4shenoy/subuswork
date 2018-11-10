@@ -10,6 +10,7 @@ import { ElementContentComponent } from './components/element-content/element-co
 import { LogoContentComponent } from './components/logo-content/logo-content.component';
 import { ExtraContentComponent } from './components/extra-content/extra-content.component';
 import { AboutContentComponent } from './components/about-content/about-content.component';
+import { SocialConnectBarComponent } from './components/social-connect-bar/social-connect-bar.component';
 
 @NgModule({
   imports: [
@@ -25,7 +26,8 @@ import { AboutContentComponent } from './components/about-content/about-content.
     ElementContentComponent,
     LogoContentComponent,
     ExtraContentComponent,
-    AboutContentComponent
+    AboutContentComponent,
+    SocialConnectBarComponent
   ],
   exports: [
     MasterlayoutComponent
