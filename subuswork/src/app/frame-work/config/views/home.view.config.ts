@@ -5,6 +5,10 @@ export const HomeConfig = {
     message: [
         'Hang on! I am almost there.. Almost..'
     ],
+    texts: [
+        'more',
+        'no more'
+    ],
     feed: FeaturesList,
     templates: {
         defaultTemplate: {

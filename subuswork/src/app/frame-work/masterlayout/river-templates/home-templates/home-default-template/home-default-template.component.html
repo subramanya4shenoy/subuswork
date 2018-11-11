@@ -1,5 +1,8 @@
 <div class="home-template">
-  <div class="banner" *ngFor="let feed of feeds">
+  <div class="banner" *ngFor="let feed of feeds"
+       [ngClass]="{'banner-miniized' : minimize(feed.feature_id),
+                   'clear-left' :((feed.feature_id % masterPageSize) == 1)}"
+        (click) = "bannerAction(feed.feature_id)">
     <div class="banner-image">
       <img src={{feed.feature_img_url}} alt="">
     </div>
@@ -8,36 +11,11 @@
       <div class="banner-small-text">{{feed.feature_short_description}}</div>
     </div>
   </div>
-
-  <!-- <div class="banner">
-    <div class="banner-image">
-      <img src="https://ampa.lifo.gr/wp-content/uploads/2018/08/bored.jpg" alt="">
-    </div>
-    <div class="banner-text-area">
-      <div class="banner-text"> Above images are from internet Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vero at assumenda voluptatibus
-        recusandae quod explicabo atque nihil nisi hic quos officiis, dolores enim, dolorum voluptate, perferendis dolore
-        obcaecati amet! </div>
+  <div class="more-button" (click) = "fetchMoreFeed()" [ngClass]="{'botton-disable': (pageSize === totalFeeds)}">
+    <div class="text" *ngIf="pageSize < totalFeeds"> {{texts[0]}} </div>
+    <div class="text" *ngIf="pageSize === totalFeeds"> {{texts[1]}} </div>
+    <div class="icon" *ngIf="pageSize < totalFeeds">
+      <img src="https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/framework%2Ficons%2Fbasic%2Fnext.svg?alt=media&token=1b9cef47-ab7b-4b78-814d-522f151eca27" alt="">
     </div>
   </div>
-  <div class="banner">
-    <div class="banner-image">
-      <img src="http://www.realat.lv/wp-content/uploads/2017/05/pivot-and-pilot-creative-viewing.gif" alt="">
-    </div>
-    <div class="banner-text-area">
-      <div class="banner-text"> Above images are from internet Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vero at assumenda voluptatibus
-        recusandae quod explicabo atque nihil nisi hic quos officiis, dolores enim, dolorum voluptate, perferendis dolore
-        obcaecati amet! </div>
-    </div>
-  </div>
-  <div class="banner">
-    <div class="banner-image">
-      <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/5eca0a59752143.5a392f2aed603.gif" alt="">
-    </div>
-    <div class="banner-text-area">
-      <div class="banner-text"> Above images are from internet Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vero at assumenda voluptatibus
-        recusandae quod explicabo atque nihil nisi hic quos officiis, dolores enim, dolorum voluptate, perferendis dolore
-        obcaecati amet! </div>
-    </div>
-  </div> -->
-
 </div>
