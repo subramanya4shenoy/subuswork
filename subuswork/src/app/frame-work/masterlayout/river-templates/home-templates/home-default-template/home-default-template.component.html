@@ -1,8 +1,6 @@
 <div class="home-template">
-  <div class="banner" *ngFor="let feed of feeds"
-       [ngClass]="{'banner-miniized' : minimize(feed.feature_id),
-                   'clear-left' :((feed.feature_id % masterPageSize) == 1)}"
-        (click) = "bannerAction(feed.feature_id)">
+  <div class="banner" *ngFor="let feed of feeds" [ngClass]="{'banner-miniized' : !(opened_feed.indexOf(feed.feature_id) > -1),
+                   'clear-left' :((feed.feature_id % masterPageSize) == 1)}" (click)="bannerAction(feed.feature_id)">
     <div class="banner-image">
       <img src={{feed.feature_img_url}} alt="">
     </div>
@@ -11,11 +9,14 @@
       <div class="banner-small-text">{{feed.feature_short_description}}</div>
     </div>
   </div>
-  <div class="more-button" (click) = "fetchMoreFeed()" [ngClass]="{'botton-disable': (pageSize === totalFeeds)}">
-    <div class="text" *ngIf="pageSize < totalFeeds"> {{texts[0]}} </div>
-    <div class="text" *ngIf="pageSize === totalFeeds"> {{texts[1]}} </div>
-    <div class="icon" *ngIf="pageSize < totalFeeds">
-      <img src="https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/framework%2Ficons%2Fbasic%2Fnext.svg?alt=media&token=1b9cef47-ab7b-4b78-814d-522f151eca27" alt="">
+  <div>
+    <div class="more-button" (click)="fetchMoreFeed()" [ngClass]="{'botton-disable': (pageSize === totalFeeds)}">
+      <div class="text" *ngIf="pageSize < totalFeeds"> {{texts[0]}} </div>
+      <div class="text" *ngIf="pageSize === totalFeeds"> {{texts[1]}} </div>
+      <div class="icon" *ngIf="pageSize < totalFeeds">
+        <img src="https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/framework%2Ficons%2Fbasic%2Fnext.svg?alt=media&token=1b9cef47-ab7b-4b78-814d-522f151eca27"
+          alt="">
+      </div>
     </div>
   </div>
 </div>

@@ -8,11 +8,10 @@
         margin: 10px;
         border-radius: 5px;
         overflow: hidden;
-        transition: .4s all ease-in-out;
+        transition: height .4s linear;
         .banner-image {
             width: 100%;
             height: 272px;
-            transition: .4s all ease-in-out;
             img {
                 height: 100%;
                 width: 100%;
@@ -24,7 +23,7 @@
             background: #eef7fe;
             height: 216px;
             transform: skewY(-10deg);
-            transition: .4s all ease-in-out;
+            transition: height .4s ease-in-out .25s, transform .2s ease-in-out;
             .banner-text {
                 display: block;
                 font-family: "contentFont";
@@ -34,8 +33,7 @@
                 padding: 28px 20px 10px 20px;
                 text-align: center;
                 line-height: 30px;
-                max-height: 130px;
-                transition: .4s all ease-in-out;
+                max-height: 130px; // transition: .4s all ease-in-out;
                 overflow: hidden;
             }
             .banner-small-text {
@@ -47,13 +45,10 @@
         width: 40px;
         height: 40px;
         border-radius: 50%;
+        transition: height 0s ease-in-out;
         cursor: pointer;
         .banner-image {
             display: none;
-            // transform: skewY(0deg);
-            // height: 0px;
-            // width: 0px;
-            // padding: 0px;
             img {
                 display: none;
             }
@@ -61,19 +56,13 @@
         .banner-text-area {
             height: 40px;
             width: 40px;
-            margin-top: 0px; 
+            margin-top: 0px;
             background: #eef7fe;
             transform: skewY(0deg);
             border-radius: 50%;
-
+            transition: all 0s ease-in-out;
             .banner-text {
                 display: none;
-                // height: 0px;
-                // width: 0px;
-                // transform: skewY(0deg);
-                // height: 0px;
-                // width: 0px;
-                // padding: 0px;
             }
             .banner-small-text {
                 display: none;
@@ -84,7 +73,7 @@
         clear: left;
     }
     .more-button {
-        float: left;
+        float: right;
         margin: 20px;
         background: #f1f1f1;
         width: 130px;
@@ -94,7 +83,7 @@
         font-size: 19px;
         font-family: "contentFont";
         text-align: center;
-        transition: .4s all ease-in-out;
+        transition: all .2s ease-in-out;
         cursor: pointer;
         .text {
             float: left;
@@ -106,7 +95,7 @@
             width: 20px;
             height: 20px;
             margin-left: 15px;
-            transition: .4s all ease-in-out;
+            transition: all .2s ease-in-out;
         }
     }
     .more-button:hover {
@@ -118,7 +107,7 @@
             transform: rotateZ(90deg);
         }
     }
-    .botton-disable{
+    .botton-disable {
         background: #f1f1f1;
         cursor: default;
         pointer-events: none;
@@ -169,15 +158,20 @@
             }
         }
         .banner-miniized {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            margin-left: 0px;
-            cursor: pointer;
+            width: 580px;
+            height: 358.5px;
+            margin-left: calc(50% - 290px);
+            border-radius: 5px;
+            overflow: hidden;
             .banner-image {
-                display: none;
+                display: block;
+                float: left;
+                width: 358.5px;
+                height: 358.5px;
                 img {
-                    display: none;
+                    display: block;
+                    height: 100%;
+                    width: 100%;
                 }
             }
             .banner-text-area {
@@ -185,10 +179,20 @@
                 height: 358.5px;
                 width: 221.5px;
                 margin-top: 0px;
+                border-radius: 0px;
                 background: #eef7fe;
                 transform: skewY(0deg);
                 .banner-text {
-                    display: none;
+                    display: block;
+                    font-family: "contentFont";
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    padding: 20px;
+                    text-align: left;
+                    line-height: 35px;
+                    max-height: 305px;
+                    overflow: hidden;
+                    transform: skewY(0deg);
                 }
                 .banner-small-text {
                     display: none;
@@ -212,11 +216,11 @@
             margin: 10px auto;
             border-radius: 5px;
             overflow: hidden;
-            transition: .4s all linear;
+            transition: all .4s linear;
             .banner-image {
                 width: 207px;
                 height: 207px;
-                transition: .4s all linear;
+                transition: all .4s linear;
                 float: left;
                 img {
                     height: 207px;
@@ -230,7 +234,7 @@
                 background: #eef7fe;
                 height: 207px;
                 transform: skewY(0deg);
-                transition: .4s all linear;
+                transition: all .4s linear;
                 .banner-text {
                     display: none;
                 }
@@ -246,7 +250,7 @@
                     line-height: 27px;
                     letter-spacing: 0px;
                     max-height: 207px;
-                    transition: .4s all;
+                    transition: all .4s ease-in-out;
                 }
             }
         }
@@ -256,8 +260,7 @@
             border-radius: 50%;
             margin-left: 10px;
             float: left;
-            cu
-            .banner-image {
+            cu .banner-image {
                 display: none;
                 img {
                     display: none;

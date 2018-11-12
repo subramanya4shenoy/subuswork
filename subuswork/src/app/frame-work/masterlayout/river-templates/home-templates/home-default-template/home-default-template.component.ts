@@ -32,7 +32,6 @@ export class HomeDefaultTemplateComponent implements OnInit {
       this.feeds.push(this.allFeeds[this.temp_feed_size]);
       this.opened_feed.push(this.allFeeds[this.temp_feed_size].feature_id);
     }
-    console.log(this.opened_feed);
   }
 
   fetchMoreFeed() {
@@ -43,38 +42,32 @@ export class HomeDefaultTemplateComponent implements OnInit {
     this.filterFeeds();
   }
 
-  minimize(id) {
-    if (this.opened_feed.indexOf(id) > -1) {
-      return false;
-    }
-    return true;
-  }
-
   bannerAction(id) {
+    const temp_feed = [];
     if (this.opened_feed.indexOf(id) > -1) {
       // openPreview
     } else {
-      this.opened_feed = [];
-      const reminder = id % this.masterPageSize;
+      const reminder = id % 3;
       if (reminder === 0) {
-        this.opened_feed.push(id);
-        this.opened_feed.push(id - 1);
-        this.opened_feed.push(id - 2);
+        temp_feed[2] = (id);
+        temp_feed[1] =  (id - 1);
+        temp_feed[0] = id - 2;
       } else if (reminder === 2) {
-        this.opened_feed.push(id - 1);
-        this.opened_feed.push(id);
-        if ((id + 1) < this.totalFeeds) {
-          this.opened_feed.push(id + 1);
+        temp_feed[1] = (id);
+        temp_feed[0] = (id - 1);
+        if ((id + 1) <= this.totalFeeds) {
+          temp_feed[2] = (id + 1);
         }
       } else if (reminder === 1) {
+        temp_feed[0] =  (id);
         if ((id + 1) < this.totalFeeds) {
-          this.opened_feed.push(id + 1);
+          temp_feed[1] = (id + 1);
         }
-        this.opened_feed.push(id);
         if ((id + 2) <= this.totalFeeds) {
-          this.opened_feed.push(id + 2);
+          temp_feed[2] =  (id + 2);
         }
       }
+      this.opened_feed = temp_feed;
     }
 
   }
