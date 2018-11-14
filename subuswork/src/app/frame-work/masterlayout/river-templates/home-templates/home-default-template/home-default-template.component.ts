@@ -50,7 +50,7 @@ export class HomeDefaultTemplateComponent implements OnInit {
       const reminder = id % 3;
       if (reminder === 0) {
         temp_feed[2] = (id);
-        temp_feed[1] =  (id - 1);
+        temp_feed[1] = (id - 1);
         temp_feed[0] = id - 2;
       } else if (reminder === 2) {
         temp_feed[1] = (id);
@@ -59,16 +59,15 @@ export class HomeDefaultTemplateComponent implements OnInit {
           temp_feed[2] = (id + 1);
         }
       } else if (reminder === 1) {
-        temp_feed[0] =  (id);
+        temp_feed[0] = (id);
         if ((id + 1) < this.totalFeeds) {
           temp_feed[1] = (id + 1);
         }
         if ((id + 2) <= this.totalFeeds) {
-          temp_feed[2] =  (id + 2);
+          temp_feed[2] = (id + 2);
         }
       }
       this.opened_feed = temp_feed;
     }
-
   }
 }

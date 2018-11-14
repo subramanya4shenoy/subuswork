@@ -21,3 +21,27 @@
         // backgroud: red;
     }
 }
+
+@media Only screen and (max-width: 600px) {
+    .timeline {
+        .title {
+            font-family: "titlefont";
+            font-size: 23px;
+            text-transform: uppercase;
+            margin-top: 15px;
+            margin-left: 0;
+            text-align: center;
+            width: 100%;
+        }
+    
+        .temp-info{
+           display: none;
+        }
+    
+        .feed-area{
+            // height: 100%;
+            // width: 100%;
+            // backgroud: red;
+        }
+    }
+}
