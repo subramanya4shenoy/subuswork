@@ -262,57 +262,13 @@
                     transition: all .4s ease-in-out;
                 }
             }
-        } // .banner-miniized {
-        //     float: none;
-        //     width: 335px;
-        //     height: 207px;
-        //     margin: 10px auto;
-        //     border-radius: 5px;
-        //     overflow: hidden;
-        //     transition: all .4s linear;
-        //     .banner-image {
-        //         width: 207px;
-        //         height: 207px;
-        //         transition: all .4s linear;
-        //         float: left;
-        //         img {
-        //             height: 207px;
-        //             width: 207px;
-        //         }
-        //     }
-        //     .banner-text-area {
-        //         float: right;
-        //         height: 358.5px;
-        //         width: 221.5px;
-        //         margin-top: 0px;
-        //         border-radius: 0px;
-        //         background: #eef7fe;
-        //         transform: skewY(0deg);
-        //         .banner-text {
-        //             display: none;
-        //         }
-        //         .banner-small-text {
-        //             display: block;
-        //             font-family: "contentFont";
-        //             transform: skewY(0deg);
-        //             text-transform: capitalize;
-        //             font-size: 15px;
-        //             padding: 35px 6px;
-        //             overflow: hidden;
-        //             text-align: left;
-        //             line-height: 27px;
-        //             letter-spacing: 0px;
-        //             max-height: 207px;
-        //             transition: all .4s ease-in-out;
-        //         }
-        //     }
-        // }
+        }
         .clear-left {
             clear: left;
         }
         .more-button {
             float: none;
-            margin: auto
+            margin: 20px auto;
         }
     }
 }

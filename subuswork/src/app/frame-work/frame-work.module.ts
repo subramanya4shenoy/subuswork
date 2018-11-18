@@ -12,6 +12,7 @@ import { ExtraContentComponent } from './components/extra-content/extra-content.
 import { AboutContentComponent } from './components/about-content/about-content.component';
 import { SocialConnectBarComponent } from './components/social-connect-bar/social-connect-bar.component';
 import { HomeDefaultTemplateComponent } from './masterlayout/river-templates/home-templates/home-default-template/home-default-template.component';
+import { LogoDefaultTemplateComponent } from './masterlayout/logo-template/logo-default-template/logo-default-template.component';
 
 @NgModule({
   imports: [
@@ -29,7 +30,8 @@ import { HomeDefaultTemplateComponent } from './masterlayout/river-templates/hom
     ExtraContentComponent,
     AboutContentComponent,
     SocialConnectBarComponent,
-    HomeDefaultTemplateComponent
+    HomeDefaultTemplateComponent,
+    LogoDefaultTemplateComponent
   ],
   exports: [
     MasterlayoutComponent

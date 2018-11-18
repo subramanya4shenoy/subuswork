@@ -13,7 +13,8 @@ export class MainRiverComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.view = 'home';
+    // #NeedsChange P:4
+    this.view = 'logo';
   }
 
   changeView(newmenu) {

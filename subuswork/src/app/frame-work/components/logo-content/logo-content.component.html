@@ -1,10 +1,11 @@
-<div class="logo">
-    <div class="title">
-      Logo
-    </div>
-    <div class="temp-info">
-        This site is still under construction. Frame work is still in progress. Experimenting multiple UI/UX elements. 
-        This will be in shape very soon and will be rolling out very interesting, creative contents soon. <br>
-        - Love
-      </div>
+<div class="logo" *ngIf="view.isActive">
+  <div class="title" *ngIf="view.show_title">
+    {{view.title}}
   </div>
+  <div class="temp-info" *ngIf="view.show_message">
+    <span>{{view.config.message}}</span>
+  </div>
+  <div class="feed-area">
+    <app-logo-default-template></app-logo-default-template>
+  </div>
+</div>

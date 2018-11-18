@@ -5,7 +5,7 @@ export const LayoutConfig = {
         {
             menu_title: 'home',
             menu_string: 'home',
-            menu_default: true,
+            menu_default: false,
             menu_ShouldShow: true,
             menu_classes: 'home',
             menu_active_class: 'home-active',
@@ -29,7 +29,7 @@ export const LayoutConfig = {
         {
             menu_title: 'logo',
             menu_string: 'logo',
-            menu_default: false,
+            menu_default: true,
             menu_ShouldShow: true,
             menu_classes: 'logo',
             menu_active_class: 'logo-active',
