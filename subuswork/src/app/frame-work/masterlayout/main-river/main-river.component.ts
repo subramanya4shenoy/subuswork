@@ -14,7 +14,7 @@ export class MainRiverComponent implements OnInit {
 
   ngOnInit() {
     // #NeedsChange P:4
-    this.view = 'logo';
+    this.view = 'extra';
   }
 
   changeView(newmenu) {

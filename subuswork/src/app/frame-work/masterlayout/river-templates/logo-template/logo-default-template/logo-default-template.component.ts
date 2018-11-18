@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ViewConfig } from '../../../config/view.config';
+import { ViewConfig } from '../../../../config/view.config';
 
 @Component({
   selector: 'app-logo-default-template',

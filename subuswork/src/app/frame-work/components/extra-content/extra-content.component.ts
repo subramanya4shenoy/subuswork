@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ViewConfig } from '../../config/view.config';
 
 @Component({
   selector: 'app-extra-content',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./extra-content.component.scss']
 })
 export class ExtraContentComponent implements OnInit {
+
+  private view = ViewConfig.extra;
 
   constructor() { }
 

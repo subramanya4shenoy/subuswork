@@ -29,7 +29,7 @@ export const LayoutConfig = {
         {
             menu_title: 'logo',
             menu_string: 'logo',
-            menu_default: true,
+            menu_default: false,
             menu_ShouldShow: true,
             menu_classes: 'logo',
             menu_active_class: 'logo-active',
@@ -41,7 +41,7 @@ export const LayoutConfig = {
         {
             menu_title: 'extra',
             menu_string: 'extra',
-            menu_default: false,
+            menu_default: true,
             menu_ShouldShow: true,
             menu_classes: 'extra',
             menu_active_class: 'extra-active',
