@@ -37,17 +37,17 @@ export const extraFeed = {
             extra_content: [
                 {
                     extra_content_id: 1,
-                    extra_content_img_url: 'https://i.pinimg.com/originals/26/fd/41/26fd412c9668c65f23a811f640ff8158.gif'
+                    extra_content_img_url: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b3e4c636216499.5714b50b95c7e.jpg'
                 },
                 {
                     extra_content_id: 2,
-                    extra_content_img_url: 'https://i.pinimg.com/originals/26/fd/41/26fd412c9668c65f23a811f640ff8158.gif'
+                    extra_content_img_url: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b3e4c636216499.5714b50b95c7e.jpg'
                 }
             ]
         },
         {
             extra_id: 2,
-            extra_hero_image_url: 'https://i.pinimg.com/originals/26/fd/41/26fd412c9668c65f23a811f640ff8158.gif',
+            extra_hero_image_url: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b3e4c636216499.5714b50b95c7e.jpg',
             extra_title: 'First Project',
             extra_type: 'Image',
             extra_style: {
@@ -61,11 +61,11 @@ export const extraFeed = {
                 },
                 {
                     extra_content_id: 2,
-                    extra_content_img_url: 'https://i.pinimg.com/originals/26/fd/41/26fd412c9668c65f23a811f640ff8158.gif'
+                    extra_content_img_url: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b3e4c636216499.5714b50b95c7e.jpg'
                 },
                 {
                     extra_content_id: 3,
-                    extra_content_img_url: 'https://i.pinimg.com/originals/26/fd/41/26fd412c9668c65f23a811f640ff8158.gif'
+                    extra_content_img_url: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b3e4c636216499.5714b50b95c7e.jpg'
                 }
             ]
         },
@@ -81,7 +81,7 @@ export const extraFeed = {
             extra_content: [
                 {
                     extra_content_id: 1,
-                    extra_content_img_url: 'https://i.pinimg.com/originals/26/fd/41/26fd412c9668c65f23a811f640ff8158.gif'
+                    extra_content_img_url: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b3e4c636216499.5714b50b95c7e.jpg'
                 },
                 {
                     extra_content_id: 2,
@@ -89,7 +89,7 @@ export const extraFeed = {
                 },
                 {
                     extra_content_id: 3,
-                    extra_content_img_url: 'https://i.pinimg.com/originals/26/fd/41/26fd412c9668c65f23a811f640ff8158.gif'
+                    extra_content_img_url: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b3e4c636216499.5714b50b95c7e.jpg'
                 }
             ]
         }
