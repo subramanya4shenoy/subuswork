@@ -12,7 +12,7 @@ export const ExtraConfig = {
     feed: extraFeed,
     templates: {
         defaultTemplate: {
-            load_per_click: 3
+            load_per_click: 1
         }
     }
 };

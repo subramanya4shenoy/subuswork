@@ -22,58 +22,19 @@
 // ]
 
 export const extraFeed = {
-    total_count: 3,
+    total_count: 1,
     // the latest ogo should be listed on top
     features: [
         {
-            extra_id: 3,
-            extra_hero_image_url: 'http://blog.signalnoise.com/wp-content/uploads/2013/08/i_hulkhogan.jpg',
-            extra_title: 'First Project',
-            extra_type: 'Image',
-            extra_style: {
-                background: '#f1f1f1',
-                color: '#292929',
-            },
-            extra_content: [
-                {
-                    extra_content_id: 1,
-                    extra_content_img_url: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b3e4c636216499.5714b50b95c7e.jpg'
-                },
-                {
-                    extra_content_id: 2,
-                    extra_content_img_url: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b3e4c636216499.5714b50b95c7e.jpg'
-                }
-            ]
-        },
-        {
-            extra_id: 2,
-            extra_hero_image_url: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b3e4c636216499.5714b50b95c7e.jpg',
-            extra_title: 'First Project',
-            extra_type: 'Image',
-            extra_style: {
-                background: '#f1f1f1',
-                color: '#292929',
-            },
-            extra_content: [
-                {
-                    extra_content_id: 1,
-                    extra_content_img_url: 'http://blog.signalnoise.com/wp-content/uploads/2013/08/i_hulkhogan.jpg'
-                },
-                {
-                    extra_content_id: 2,
-                    extra_content_img_url: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b3e4c636216499.5714b50b95c7e.jpg'
-                },
-                {
-                    extra_content_id: 3,
-                    extra_content_img_url: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b3e4c636216499.5714b50b95c7e.jpg'
-                }
-            ]
-        },
-        {
             extra_id: 1,
-            extra_hero_image_url: 'http://blog.signalnoise.com/wp-content/uploads/2013/08/i_hulkhogan.jpg',
-            extra_title: 'First Project',
+            // tslint:disable-next-line:max-line-length
+            extra_hero_image_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F1%2F2.jpg?alt=media&token=99c4ea97-a547-450e-b4fe-b9df4d493964',
+            extra_title: '#SubusDailyAnimals',
             extra_type: 'Image',
+            extra_desription: 'This project: Subu created one image per day on his daily commute.\
+            Each image contains what does the group of that species is called, also the image implies the meaning. \
+            (some more crap). He used canva for creating quick immages, fonts and convertion. You can search the project \
+            response with above hashtag in insta, if you love them, share them <3',
             extra_style: {
                 background: '#f1f1f1',
                 color: '#292929',
@@ -81,15 +42,28 @@ export const extraFeed = {
             extra_content: [
                 {
                     extra_content_id: 1,
-                    extra_content_img_url: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b3e4c636216499.5714b50b95c7e.jpg'
+                    // tslint:disable-next-line:max-line-length
+                    extra_content_img_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F1%2F6.jpg?alt=media&token=9e1704c3-b104-4295-aa0f-cd60169004d4'
                 },
                 {
                     extra_content_id: 2,
-                    extra_content_img_url: 'http://blog.signalnoise.com/wp-content/uploads/2013/08/i_hulkhogan.jpg'
+                    // tslint:disable-next-line:max-line-length
+                    extra_content_img_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F1%2F5.jpg?alt=media&token=fb5922e9-bffd-4c47-9b2e-c3e87176bd72'
                 },
                 {
                     extra_content_id: 3,
-                    extra_content_img_url: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b3e4c636216499.5714b50b95c7e.jpg'
+                    // tslint:disable-next-line:max-line-length
+                    extra_content_img_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F1%2F4.jpg?alt=media&token=4314c2b1-b7ac-4db9-a509-cf3095eeb4ee'
+                },
+                {
+                    extra_content_id: 4,
+                    // tslint:disable-next-line:max-line-length
+                    extra_content_img_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F1%2F3.jpg?alt=media&token=99a436b5-9558-4428-99b4-ed980b5bac6d'
+                },
+                {
+                    extra_content_id: 5,
+                    // tslint:disable-next-line:max-line-length
+                    extra_content_img_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F1%2F1.jpg?alt=media&token=4b43d440-5b6e-4182-a3c2-376cd29afc68'
                 }
             ]
         }
