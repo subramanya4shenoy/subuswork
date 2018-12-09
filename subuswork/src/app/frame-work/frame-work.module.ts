@@ -15,7 +15,12 @@ import { SocialConnectBarComponent } from './components/social-connect-bar/socia
 import { HomeDefaultTemplateComponent } from './masterlayout/river-templates/home-templates/home-default-template/home-default-template.component';
 // tslint:disable-next-line:max-line-length
 import { LogoDefaultTemplateComponent } from './masterlayout/river-templates/logo-template/logo-default-template/logo-default-template.component';
+// tslint:disable-next-line:max-line-length
 import { ExtraDefaultTemplateComponent } from './masterlayout/river-templates/extra-template/extra-default-template/extra-default-template.component';
+import { LogoPageComponent } from './components/page/logo-page/logo-page.component';
+import { ElementPageComponent } from './components/page/element-page/element-page.component';
+import { ExtraPageComponent } from './components/page/extra-page/extra-page.component';
+import { MePageComponent } from './components/page/me-page/me-page.component';
 
 @NgModule({
   imports: [
@@ -35,7 +40,11 @@ import { ExtraDefaultTemplateComponent } from './masterlayout/river-templates/ex
     SocialConnectBarComponent,
     HomeDefaultTemplateComponent,
     LogoDefaultTemplateComponent,
-    ExtraDefaultTemplateComponent
+    ExtraDefaultTemplateComponent,
+    LogoPageComponent,
+    ElementPageComponent,
+    ExtraPageComponent,
+    MePageComponent
   ],
   exports: [
     MasterlayoutComponent

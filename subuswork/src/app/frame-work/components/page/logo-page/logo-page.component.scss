@@ -1,0 +1,43 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    .logo-area {
+        width: 800px;
+        height: 500px;
+        margin: calc(50vh - 250px) auto;
+        background: #fff;
+        .close {
+            position: absolute;
+            width: 10px;
+            height: 40px;
+            cursor: pointer;
+            font-family: content-font;
+            margin-left: 765px;
+            font-family: contentFont;
+            font-size: 25px;
+            padding: 0px 10px;
+            line-height: 38px;
+            text-align: right;
+            color: #424242;
+        }
+        .logo-area__img {
+            float: left;
+            width: 500px;
+            height: 500px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .logo-area__desc {
+            float: right;
+            width: 300px;
+            height: 500px;
+        }
+    }
+}

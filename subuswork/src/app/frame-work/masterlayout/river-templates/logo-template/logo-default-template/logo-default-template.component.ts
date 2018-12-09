@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ViewConfig } from '../../../../config/view.config';
 
 @Component({
@@ -19,7 +20,7 @@ export class LogoDefaultTemplateComponent implements OnInit {
   public temp_feed_size = 0;
   public opened_feed = [];
 
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit() {
     this.pageSize = this.masterPageSize;
@@ -41,6 +42,10 @@ export class LogoDefaultTemplateComponent implements OnInit {
       this.pageSize = this.totalFeeds;
     }
     this.filterFeeds();
+  }
+
+  viewLogo(id) {
+    this.router.navigate(['logo/' + id]);
   }
 
 }
