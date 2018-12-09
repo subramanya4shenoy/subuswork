@@ -74,6 +74,7 @@
     }
     .more-button {
         float: right;
+        clear: both;
         margin: 20px;
         background: #f1f1f1;
         width: 130px;
@@ -114,161 +115,164 @@
     }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1023px) {
-    .home-template {
-        // margin from golden ratio
-        margin: 0px 20px;
-        .banner {
-            width: 580px;
-            height: 358.5px;
-            margin-left: calc(50% - 290px);
-            border-radius: 5px;
-            overflow: hidden;
-            .banner-image {
-                float: left;
-                width: 358.5px;
-                height: 358.5px;
-                img {
-                    height: 100%;
-                    width: 100%;
-                }
-            }
-            .banner-text-area {
-                float: right;
-                height: 358.5px;
-                width: 221.5px;
-                margin-top: 0px;
-                background: #eef7fe;
-                transform: skewY(0deg);
-                .banner-text {
-                    display: block;
-                    font-family: "contentFont";
-                    text-transform: capitalize;
-                    font-size: 18px;
-                    padding: 20px;
-                    text-align: left;
-                    line-height: 35px;
-                    max-height: 305px;
-                    overflow: hidden;
-                    transform: skewY(0deg);
-                }
-                .banner-small-text {
-                    display: none;
-                }
-            }
-        }
-        .banner-miniized {
-            width: 580px;
-            height: 358.5px;
-            margin-left: calc(50% - 290px);
-            border-radius: 5px;
-            overflow: hidden;
-            .banner-image {
-                display: block;
-                float: left;
-                width: 358.5px;
-                height: 358.5px;
-                img {
-                    display: block;
-                    height: 100%;
-                    width: 100%;
-                }
-            }
-            .banner-text-area {
-                float: right;
-                height: 358.5px;
-                width: 221.5px;
-                margin-top: 0px;
-                border-radius: 0px;
-                background: #eef7fe;
-                transform: skewY(0deg);
-                .banner-text {
-                    display: block;
-                    font-family: "contentFont";
-                    text-transform: capitalize;
-                    font-size: 18px;
-                    padding: 20px;
-                    text-align: left;
-                    line-height: 35px;
-                    max-height: 305px;
-                    overflow: hidden;
-                    transform: skewY(0deg);
-                }
-                .banner-small-text {
-                    display: none;
-                }
-            }
-        }
-        .clear-left {
-            clear: left;
-        }
-    }
-}
+// @media only screen and (min-width: 601px) and (max-width: 1023px) {
+//     .home-template {
+//         // margin from golden ratio
+//         margin: 0px 20px;
+//         .banner {
+//             width: 580px;
+//             height: 358.5px;
+//             margin-left: calc(50% - 290px);
+//             border-radius: 5px;
+//             overflow: hidden;
+//             .banner-image {
+//                 float: left;
+//                 width: 358.5px;
+//                 height: 358.5px;
+//                 img {
+//                     height: 100%;
+//                     width: 100%;
+//                 }
+//             }
+//             .banner-text-area {
+//                 float: right;
+//                 height: 358.5px;
+//                 width: 221.5px;
+//                 margin-top: 0px;
+//                 background: #eef7fe;
+//                 transform: skewY(0deg);
+//                 .banner-text {
+//                     display: block;
+//                     font-family: "contentFont";
+//                     text-transform: capitalize;
+//                     font-size: 18px;
+//                     padding: 20px;
+//                     text-align: left;
+//                     line-height: 35px;
+//                     max-height: 305px;
+//                     overflow: hidden;
+//                     transform: skewY(0deg);
+//                 }
+//                 .banner-small-text {
+//                     display: none;
+//                 }
+//             }
+//         }
+//         .banner-miniized {
+//             width: 580px;
+//             height: 358.5px;
+//             margin-left: calc(50% - 290px);
+//             border-radius: 5px;
+//             overflow: hidden;
+//             .banner-image {
+//                 display: block;
+//                 float: left;
+//                 width: 358.5px;
+//                 height: 358.5px;
+//                 img {
+//                     display: block;
+//                     height: 100%;
+//                     width: 100%;
+//                 }
+//             }
+//             .banner-text-area {
+//                 float: right;
+//                 height: 358.5px;
+//                 width: 221.5px;
+//                 margin-top: 0px;
+//                 border-radius: 0px;
+//                 background: #eef7fe;
+//                 transform: skewY(0deg);
+//                 .banner-text {
+//                     display: block;
+//                     font-family: "contentFont";
+//                     text-transform: capitalize;
+//                     font-size: 18px;
+//                     padding: 20px;
+//                     text-align: left;
+//                     line-height: 35px;
+//                     max-height: 305px;
+//                     overflow: hidden;
+//                     transform: skewY(0deg);
+//                 }
+//                 .banner-small-text {
+//                     display: none;
+//                 }
+//             }
+//         }
+//         .clear-left {
+//             clear: left;
+//         }
+//     }
+// }
 
 @media Only screen and (max-width: 600px) {
+    // .home-template {
+    //     // margin from golden ratio
+    //     margin: 0px auto;
+    //     .banner,
+    //     .banner-miniized {
+    //         float: none;
+    //         width: 90%;
+    //         height: 108px;
+    //         margin: 25px auto;
+    //         border-radius: 0px;
+    //         overflow: hidden;
+    //         transition: all .4s linear;
+    //         .banner-image {
+    //             display: block;
+    //             height: 100px;
+    //             width: 100px;
+    //             transition: all .4s linear;
+    //             float: left;
+    //             border-radius: 0px 50%;
+    //             border: 1px solid #c1c1c154;
+    //             img {
+    //                 display: block;
+    //                 height: 100px;
+    //                 width: 100px;
+    //                 margin: auto;
+    //                 border-radius: 0px 50%;
+    //             }
+    //         }
+    //         .banner-text-area {
+    //             float: left;
+    //             width: 65%;
+    //             margin: 0px 10px;
+    //             background: #eef7fe;
+    //             height: 100px;
+    //             transform: skewY(0deg);
+    //             transition: all .4s linear;
+    //             border-radius: 0px;
+    //             overflow: hidden;
+    //             .banner-text {
+    //                 display: none;
+    //             }
+    //             .banner-small-text {
+    //                 display: block;
+    //                 font-family: "contentFont";
+    //                 transform: skewY(0deg);
+    //                 text-transform: capitalize;
+    //                 font-size: 14px;
+    //                 padding: 10px 23px;
+    //                 overflow: hidden;
+    //                 text-align: left;
+    //                 line-height: 27px;
+    //                 letter-spacing: 0px;
+    //                 max-height: 207px;
+    //                 transition: all .4s ease-in-out;
+    //             }
+    //         }
+    //     }
+    //     .clear-left {
+    //         clear: left;
+    //     }
+    //     .more-button {
+    //         float: none;
+    //         margin: 20px auto;
+    //     }
+    // }
     .home-template {
-        // margin from golden ratio
-        margin: 0px auto;
-        .banner,
-        .banner-miniized {
-            float: none;
-            width: 90%;
-            height: 108px;
-            margin: 25px auto;
-            border-radius: 0px;
-            overflow: hidden;
-            transition: all .4s linear;
-            .banner-image {
-                display: block;
-                height: 100px;
-                width: 100px;
-                transition: all .4s linear;
-                float: left;
-                border-radius: 0px 50%;
-                border: 1px solid #c1c1c154;
-                img {
-                    display: block;
-                    height: 100px;
-                    width: 100px;
-                    margin: auto;
-                    border-radius: 0px 50%;
-                }
-            }
-            .banner-text-area {
-                float: left;
-                width: 65%;
-                margin: 0px 10px;
-                background: #eef7fe;
-                height: 100px;
-                transform: skewY(0deg);
-                transition: all .4s linear;
-                border-radius: 0px;
-                overflow: hidden;
-                .banner-text {
-                    display: none;
-                }
-                .banner-small-text {
-                    display: block;
-                    font-family: "contentFont";
-                    transform: skewY(0deg);
-                    text-transform: capitalize;
-                    font-size: 14px;
-                    padding: 10px 23px;
-                    overflow: hidden;
-                    text-align: left;
-                    line-height: 27px;
-                    letter-spacing: 0px;
-                    max-height: 207px;
-                    transition: all .4s ease-in-out;
-                }
-            }
-        }
-        .clear-left {
-            clear: left;
-        }
-        .more-button {
-            float: none;
-            margin: 20px auto;
-        }
+        margin: 0px 0px calc((100% - 300px) / 2);
     }
 }
