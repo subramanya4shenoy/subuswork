@@ -1,0 +1,210 @@
+.extra-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: greenyellow;
+    z-index: 100;
+    .extra-page__left-gallery {
+        float: left;
+        width: 50vw;
+        height: 100vh;
+        background: grey;
+        overflow-y: auto;
+        overflow-y: overlay;
+        .extra-page__left-gallery-hero-image {
+            margin: 2vw auto 0 auto;
+            width: 30vw;
+            height: 30vw;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .extra-page__left-gallery-slide-image {
+            margin: 20px 10px;
+            .extra-page__gallery-thumbnail {
+                float: left;
+                width: 5vw;
+                height: 5vw;
+                overflow: hidden;
+                margin: 10px 10px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .extra-page__right-contents {
+        float: right;
+        width: 50vw;
+        height: 100vh;
+        font-family: contentFont;
+        overflow: overlay;
+        overflow-y: auto;
+        overflow-x: hidden;
+        .extra-page__right-socialshare-bar {
+            width: 100%;
+            text-align: center;
+            margin: 20px;
+            font-size: 18px;
+        }
+        .extra-page__right-content {
+            margin: 50px;
+            .extra-page__right-content-title {
+                font-size: 3vw;
+                margin: 50px 0px;
+            }
+            .extra-page__right-content-description {
+                font-size: 1.4vw;
+                text-align: left;
+                line-height: 2.1vw;
+                letter-spacing: 0.2px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
+    .extra-page {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: greenyellow;
+        z-index: 100;
+        .extra-page__left-gallery {
+            float: none;
+            width: 100vw;
+            height: 50vh;
+            background: grey;
+            overflow-y: auto;
+            overflow-y: overlay;
+            .extra-page__left-gallery-hero-image {
+                margin: 2vh auto 0 auto;
+                width: 40vh;
+                height: 40vh;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .extra-page__left-gallery-slide-image {
+                margin: 20px 10px;
+                .extra-page__gallery-thumbnail {
+                    float: left;
+                    width: 5vw;
+                    height: 5vw;
+                    overflow: hidden;
+                    margin: 10px 10px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .extra-page__right-contents {
+            float: none;
+            width: 100vw;
+            height: 50vh;
+            font-family: contentFont;
+            overflow: overlay;
+            overflow-y: auto;
+            overflow-x: hidden;
+            .extra-page__right-socialshare-bar {
+                width: 100%;
+                text-align: center;
+                margin: 20px;
+                font-size: 18px;
+            }
+            .extra-page__right-content {
+                margin: 20px 50px;
+                .extra-page__right-content-title {
+                    font-size: 35px;
+                    margin: 20px 0px;
+                }
+                .extra-page__right-content-description {
+                    font-size: 20px;
+                    text-align: left;
+                    line-height: 30px;
+                    letter-spacing: .7px;
+                }
+            }
+        }
+    }
+}
+
+@media Only screen and (max-width: 600px) {
+    .extra-page {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: greenyellow;
+        z-index: 100;
+        .extra-page__left-gallery {
+            float: none;
+            width: 100vw;
+            height: 50vh;
+            background: grey;
+            overflow-y: auto;
+            overflow-y: overlay;
+            .extra-page__left-gallery-hero-image {
+                margin: 0;
+                width: 100vw;
+                height: 100vw;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .extra-page__left-gallery-slide-image {
+                margin: 0px 10px;
+                .extra-page__gallery-thumbnail {
+                    float: left;
+                    width: 5vw;
+                    height: 5vw;
+                    overflow: hidden;
+                    margin: 10px 10px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .extra-page__right-contents {
+            float: none;
+            width: 100vw;
+            height: 50vh;
+            font-family: contentFont;
+            overflow: overlay;
+            overflow-y: auto;
+            overflow-x: hidden;
+            .extra-page__right-socialshare-bar {
+                width: 100%;
+                text-align: center;
+                margin: 20px;
+                font-size: 18px;
+            }
+            .extra-page__right-content {
+                margin: 20px 35px;
+                .extra-page__right-content-title {
+                    font-size: 25px;
+                    margin: 20px 0px;
+                }
+                .extra-page__right-content-description {
+                    font-size: 12px;
+                    text-align: left;
+                    line-height: 24px;
+                    letter-spacing: .7px;
+                }
+            }
+        }
+    }
+}

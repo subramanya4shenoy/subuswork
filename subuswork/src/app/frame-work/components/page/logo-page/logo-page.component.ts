@@ -17,7 +17,6 @@ export class LogoPageComponent implements OnInit {
 
   ngOnInit() {
     const id = this.activeRoute.snapshot.params.id;
-    console.log(id);
     this.getDetails(id);
   }
 

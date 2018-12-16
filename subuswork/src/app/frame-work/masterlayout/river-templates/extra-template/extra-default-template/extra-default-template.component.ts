@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ViewConfig } from '../../../../config/view.config';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-extra-default-template',
@@ -20,7 +20,7 @@ export class ExtraDefaultTemplateComponent implements OnInit {
   public temp_feed_size = 0;
   public opened_feed = [];
 
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit() {
     this.pageSize = this.masterPageSize;
@@ -41,6 +41,14 @@ export class ExtraDefaultTemplateComponent implements OnInit {
       this.pageSize = this.totalFeeds;
     }
     this.filterFeeds();
+  }
+
+  openExtraDetailsPage(id) {
+    this.router.navigate(['extra/' + id]);
+  }
+
+  openLogoPage(id) {
+    this.router.navigate(['logo/' + id]);
   }
 
 }

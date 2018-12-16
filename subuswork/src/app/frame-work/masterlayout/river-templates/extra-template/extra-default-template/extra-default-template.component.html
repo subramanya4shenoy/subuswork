@@ -4,14 +4,14 @@
     <div class="project-hero">
       <img src={{feed.extra_hero_image_url}} alt="">
     </div>
-    <div class="project-info">
+    <div class="project-info pointer" (click)="openExtraDetailsPage(feed.extra_id)">
       <div class="title">{{feed.extra_title}}</div>
       <div class="note">
         {{feed.extra_desription}}
       </div>
     </div>
     <div class="project-gallery">
-      <div class="image" *ngFor="let content of feed.extra_content">
+      <div class="image pointer" *ngFor="let content of feed.extra_content" (click)=openLogoPage(content.extra_content_id)>
         <img src={{content.extra_content_img_url}} alt="">
       </div>
     </div>
@@ -24,5 +24,4 @@
         alt="">
     </div>
   </div>
-
 </div>

@@ -34,10 +34,16 @@ export const extraFeed = {
             extra_desription: 'This project: Subu created one image per day on his daily commute.\
             Each image contains what does the group of that species is called, also the image implies the meaning. \
             (some more crap). He used canva for creating quick immages, fonts and convertion. You can search the project \
-            response with above hashtag in insta, if you love them, share them <3',
+            response with above hashtag in insta, if you love them, share them <3  \
+            <p> nwe paragea daw',
+            extra_desription_detailed: '<b>This project : </b> Subu created one image per day on his daily commute.\
+            Each image contains what does the group of that species is called, also the image implies the meaning. \
+            (some more crap). He used canva for creating quick immages, fonts and convertion. You can search the project \
+            response with above hashtag in insta, if you love them, share them <3  \
+            <p> nwe paragea daw',
             extra_style: {
-                background: '#f1f1f1',
-                color: '#292929',
+                background: '#ff5d5b',
+                color: '#efffff',
             },
             extra_content: [
                 {
@@ -62,6 +68,11 @@ export const extraFeed = {
                 },
                 {
                     extra_content_id: 5,
+                    // tslint:disable-next-line:max-line-length
+                    extra_content_img_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F1%2F2.jpg?alt=media&token=99c4ea97-a547-450e-b4fe-b9df4d493964'
+                },
+                {
+                    extra_content_id: 6,
                     // tslint:disable-next-line:max-line-length
                     extra_content_img_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F1%2F1.jpg?alt=media&token=4b43d440-5b6e-4182-a3c2-376cd29afc68'
                 }

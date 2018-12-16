@@ -1,3 +1,19 @@
-<p>
-  extra-page works!
-</p>
+<div class="extra-page" *ngIf="show">
+  <div class="extra-page__left-gallery" [ngStyle]="{'background' : extra.extra_style.background}">
+    <div class="extra-page__left-gallery-hero-image">
+      <img src="{{hero}}" alt="">
+    </div>
+    <div class="extra-page__left-gallery-slide-image">
+      <div class="extra-page__gallery-thumbnail pointer" *ngFor="let thumbs of extra.extra_content" (click)="changeHero(thumbs.extra_content_img_url)">
+       <img src="{{thumbs.extra_content_img_url}}" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="extra-page__right-contents" [ngStyle]="{'background' : extra.extra_style.background, 'color' : extra.extra_style.color}">
+    <div class="extra-page__right-socialshare-bar">Like . Share</div>
+    <div class="extra-page__right-content">
+      <div class="extra-page__right-content-title" [ngStyle]="{'color' : extra.extra_style.background, 'background' : extra.extra_style.color}">{{extra.extra_title}}</div>
+      <div class="extra-page__right-content-description" [innerHTML]="extra.extra_desription_detailed"></div>
+    </div>
+  </div>
+</div>
