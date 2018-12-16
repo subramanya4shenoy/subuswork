@@ -28,6 +28,7 @@ export const logoFeed = {
             // tslint:disable-next-line:max-line-length
             logo_cover_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F1%2F1.jpg?alt=media&token=4b43d440-5b6e-4182-a3c2-376cd29afc68',
             logo_description: 'new text',
+            logo_title: '#SubusDailyAnimal',
             logo_description_short: 'new short text'
         },
         {
@@ -36,7 +37,8 @@ export const logoFeed = {
             logo_url: '',
             // tslint:disable-next-line:max-line-length
             logo_cover_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F1%2F2.jpg?alt=media&token=99c4ea97-a547-450e-b4fe-b9df4d493964',
-            logo_description: 'new text',
+            logo_description: 'Description about the image lorem ipsum dolerawkd ajwdkja ka jwd ajjwd j jwa da jw ajd',
+            logo_title: '#SubusDailyAnimal',
             logo_description_short: 'new short text'
         },
         {
@@ -45,7 +47,8 @@ export const logoFeed = {
             logo_url: '',
             // tslint:disable-next-line:max-line-length
             logo_cover_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F1%2F3.jpg?alt=media&token=99a436b5-9558-4428-99b4-ed980b5bac6d',
-            logo_description: 'new text',
+            logo_description: 'Description about the image lorem ipsum dolerawkd ajwdkja ka jwd ajjwd j jwa da jw ajd',
+            logo_title: '#SubusDailyAnimal',
             logo_description_short: 'new short text'
         },
         {
@@ -54,7 +57,8 @@ export const logoFeed = {
             logo_url: '',
             // tslint:disable-next-line:max-line-length
             logo_cover_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F1%2F4.jpg?alt=media&token=4314c2b1-b7ac-4db9-a509-cf3095eeb4ee',
-            logo_description: 'new text',
+            logo_description: 'Description about the image lorem ipsum dolerawkd ajwdkja ka jwd ajjwd j jwa da jw ajd',
+            logo_title: '#SubusDailyAnimal',
             logo_description_short: 'new short text'
         },
         {
@@ -63,7 +67,8 @@ export const logoFeed = {
             logo_url: '',
             // tslint:disable-next-line:max-line-length
             logo_cover_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F1%2F5.jpg?alt=media&token=fb5922e9-bffd-4c47-9b2e-c3e87176bd72',
-            logo_description: 'new text',
+            logo_description: 'Description about the image lorem ipsum dolerawkd ajwdkja ka jwd ajjwd j jwa da jw ajd',
+            logo_title: '#SubusDailyAnimal',
             logo_description_short: 'new short text'
         },
         {
@@ -72,7 +77,8 @@ export const logoFeed = {
             logo_url: '',
             // tslint:disable-next-line:max-line-length
             logo_cover_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F1%2F6.jpg?alt=media&token=9e1704c3-b104-4295-aa0f-cd60169004d4',
-            logo_description: 'new text',
+            logo_description: 'Description about the image lorem ipsum dolerawkd ajwdkja ka jwd ajjwd j jwa da jw ajd',
+            logo_title: '#SubusDailyAnimal',
             logo_description_short: 'new short text'
         }
     ]
