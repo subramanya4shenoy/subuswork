@@ -21,6 +21,7 @@ import { LogoPageComponent } from './components/page/logo-page/logo-page.compone
 import { ElementPageComponent } from './components/page/element-page/element-page.component';
 import { ExtraPageComponent } from './components/page/extra-page/extra-page.component';
 import { MePageComponent } from './components/page/me-page/me-page.component';
+import { ElementDefaultTemplateComponent } from './masterlayout/river-templates/element-template/element-default-template/element-default-template.component';
 
 @NgModule({
   imports: [
@@ -44,7 +45,8 @@ import { MePageComponent } from './components/page/me-page/me-page.component';
     LogoPageComponent,
     ElementPageComponent,
     ExtraPageComponent,
-    MePageComponent
+    MePageComponent,
+    ElementDefaultTemplateComponent
   ],
   exports: [
     MasterlayoutComponent

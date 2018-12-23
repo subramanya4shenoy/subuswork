@@ -42,8 +42,8 @@ export const extraFeed = {
             response with above hashtag in insta, if you love them, share them <3  \
             <p> nwe paragea daw',
             extra_style: {
-                background: '#ff5d5b',
-                color: '#efffff',
+                background: '#ffffff',
+                color: '#0f1620',
             },
             extra_content: [
                 {

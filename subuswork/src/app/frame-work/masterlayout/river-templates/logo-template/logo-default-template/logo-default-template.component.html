@@ -1,5 +1,5 @@
 <div class="logo-feed">
-  <div class="logo-card" *ngFor="let feed of feeds" (click)="viewLogo(feed.logo_id)">
+  <div class="logo-card pointer" *ngFor="let feed of feeds" (click)="viewLogo(feed.logo_id)">
      <img src={{feed.logo_cover_url}} alt="">
   </div>
   <div class="more-button" (click)="fetchMoreFeed()" [ngClass]="{'botton-disable': (pageSize === totalFeeds)}">

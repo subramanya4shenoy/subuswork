@@ -37,4 +37,9 @@ export class ExtraPageComponent implements OnInit {
     this.hero = url;
   }
 
+  goback() {
+    event.preventDefault();
+    this.location.back();
+  }
+
 }

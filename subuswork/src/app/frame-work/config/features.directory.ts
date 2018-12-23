@@ -32,6 +32,7 @@ export const FeaturesList = {
             feature_id: 1,
             feature_category: 'extra',
             feature_type: 'image',
+            feature_url: '/extra/1',
             feature_banner_style: {
                 'background': '#000',
                 'color': '#d48b8a'

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ViewConfig } from '../../../../config/view.config';
 
 @Component({
@@ -19,7 +20,7 @@ export class HomeDefaultTemplateComponent implements OnInit {
   public temp_feed_size = 0;
   public opened_feed = [];
 
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit() {
     this.pageSize = this.masterPageSize;
@@ -42,32 +43,33 @@ export class HomeDefaultTemplateComponent implements OnInit {
     this.filterFeeds();
   }
 
-  bannerAction(id) {
-    const temp_feed = [];
-    if (this.opened_feed.indexOf(id) > -1) {
-      // openPreview
-    } else {
-      const reminder = id % 3;
-      if (reminder === 0) {
-        temp_feed[2] = (id);
-        temp_feed[1] = (id - 1);
-        temp_feed[0] = id - 2;
-      } else if (reminder === 2) {
-        temp_feed[1] = (id);
-        temp_feed[0] = (id - 1);
-        if ((id + 1) <= this.totalFeeds) {
-          temp_feed[2] = (id + 1);
-        }
-      } else if (reminder === 1) {
-        temp_feed[0] = (id);
-        if ((id + 1) < this.totalFeeds) {
-          temp_feed[1] = (id + 1);
-        }
-        if ((id + 2) <= this.totalFeeds) {
-          temp_feed[2] = (id + 2);
-        }
-      }
-      this.opened_feed = temp_feed;
-    }
+  bannerAction(url) {
+  //   const temp_feed = [];
+  //   if (this.opened_feed.indexOf(id) > -1) {
+  //     // openPreview
+  //   } else {
+  //     const reminder = id % 3;
+  //     if (reminder === 0) {
+  //       temp_feed[2] = (id);
+  //       temp_feed[1] = (id - 1);
+  //       temp_feed[0] = id - 2;
+  //     } else if (reminder === 2) {
+  //       temp_feed[1] = (id);
+  //       temp_feed[0] = (id - 1);
+  //       if ((id + 1) <= this.totalFeeds) {
+  //         temp_feed[2] = (id + 1);
+  //       }
+  //     } else if (reminder === 1) {
+  //       temp_feed[0] = (id);
+  //       if ((id + 1) < this.totalFeeds) {
+  //         temp_feed[1] = (id + 1);
+  //       }
+  //       if ((id + 2) <= this.totalFeeds) {
+  //         temp_feed[2] = (id + 2);
+  //       }
+  //     }
+  //     this.opened_feed = temp_feed;
+  //   }
+    this.router.navigate([url]);
   }
 }

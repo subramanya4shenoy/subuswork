@@ -1,6 +1,6 @@
 <div class="home-template">
-  <div class="banner" *ngFor="let feed of feeds" [ngClass]="{'banner-miniized' : !(opened_feed.indexOf(feed.feature_id) > -1),
-                   'clear-left' :((feed.feature_id % masterPageSize) == 1)}" (click)="bannerAction(feed.feature_id)">
+  <div class="banner pointer" *ngFor="let feed of feeds" [ngClass]="{'banner-miniized' : !(opened_feed.indexOf(feed.feature_id) > -1),
+                   'clear-left' :((feed.feature_id % masterPageSize) == 1)}" (click)="bannerAction(feed.feature_url)">
     <div class="banner-image">
       <img src={{feed.feature_img_url}} alt="">
     </div>
