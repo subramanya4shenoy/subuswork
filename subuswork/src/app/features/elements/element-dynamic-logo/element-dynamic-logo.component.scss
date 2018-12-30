@@ -1,0 +1,22 @@
+.element-one{
+    font-family: 'contentFont';
+    .title{
+        width: 65vw;
+        background: #25eaa4;
+        color: #fff;
+        text-align: center;
+        margin: 20px auto;
+        font-size: 30px;
+        text-transform: capitalize;
+        font-family: 'titleFont';
+    }
+
+    .content{
+        width: 65vw;
+        margin: 20px auto;
+        line-height: 37px;
+        font-size: 20px;
+        letter-spacing: .4px;
+        color: #0c0c0c;
+    }
+}

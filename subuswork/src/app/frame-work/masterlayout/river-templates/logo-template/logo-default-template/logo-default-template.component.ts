@@ -25,7 +25,6 @@ export class LogoDefaultTemplateComponent implements OnInit {
   ngOnInit() {
     this.pageSize = this.masterPageSize;
     this.filterFeeds();
-    console.log(this.feeds);
   }
 
   filterFeeds() {

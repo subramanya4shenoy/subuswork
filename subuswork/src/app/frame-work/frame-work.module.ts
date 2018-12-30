@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+
+
 import { MasterlayoutComponent } from './masterlayout/masterlayout.component';
 import { TopBarComponent } from './masterlayout/top-bar/top-bar.component';
 import { MainRiverComponent } from './masterlayout/main-river/main-river.component';
 import { SideMenuComponent } from './masterlayout/side-menu/side-menu.component';
-import { Logo1Component } from '../features/component/logo1/logo1.component';
 import { HomeContentComponent } from './components/home-content/home-content.component';
 import { ElementContentComponent } from './components/element-content/element-content.component';
 import { LogoContentComponent } from './components/logo-content/logo-content.component';
@@ -21,7 +23,13 @@ import { LogoPageComponent } from './components/page/logo-page/logo-page.compone
 import { ElementPageComponent } from './components/page/element-page/element-page.component';
 import { ExtraPageComponent } from './components/page/extra-page/extra-page.component';
 import { MePageComponent } from './components/page/me-page/me-page.component';
+// tslint:disable-next-line:max-line-length
 import { ElementDefaultTemplateComponent } from './masterlayout/river-templates/element-template/element-default-template/element-default-template.component';
+
+// all feature elements listed below
+import { Logo1Component } from '../features/component/logo1/logo1.component';
+import { ElementDynamicLogoComponent } from '../features/elements/element-dynamic-logo/element-dynamic-logo.component';
+
 
 @NgModule({
   imports: [
@@ -33,6 +41,7 @@ import { ElementDefaultTemplateComponent } from './masterlayout/river-templates/
     MainRiverComponent,
     SideMenuComponent,
     Logo1Component,
+    ElementDynamicLogoComponent,
     HomeContentComponent,
     ElementContentComponent,
     LogoContentComponent,

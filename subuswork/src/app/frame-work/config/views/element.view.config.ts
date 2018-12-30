@@ -1,3 +1,5 @@
+import { elementFeed } from '../feeds/element.directory';
+
 export const ElementConfig = {
     shouldShow: true,
     message: [
@@ -7,10 +9,10 @@ export const ElementConfig = {
         'more',
         'no more'
     ],
-    feed: '',
+    feed: elementFeed,
     templates: {
         defaultTemplate: {
-            load_per_click: 4
+            load_per_click: 1
         }
     }
 };

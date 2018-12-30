@@ -9,11 +9,11 @@ import { Router } from '@angular/router';
 })
 export class ElementDefaultTemplateComponent implements OnInit {
 
-  public view = ViewConfig.extra.config.templates.defaultTemplate;
-  public masterPageSize = ViewConfig.extra.config.templates.defaultTemplate.load_per_click;
-  public allFeeds = ViewConfig.extra.config.feed.features;
-  public totalFeeds = ViewConfig.extra.config.feed.total_count;
-  public texts = ViewConfig.extra.config.texts;
+  public view = ViewConfig.element.config.templates.defaultTemplate;
+  public masterPageSize = ViewConfig.element.config.templates.defaultTemplate.load_per_click;
+  public allFeeds = ViewConfig.element.config.feed.features;
+  public totalFeeds = ViewConfig.element.config.feed.total_count;
+  public texts = ViewConfig.element.config.texts;
 
   public feeds = [];
   public pageSize: number;
@@ -31,7 +31,7 @@ export class ElementDefaultTemplateComponent implements OnInit {
     this.opened_feed = [];
     for (this.temp_feed_size; this.temp_feed_size < this.pageSize; this.temp_feed_size++) {
       this.feeds.push(this.allFeeds[this.temp_feed_size]);
-      this.opened_feed.push(this.allFeeds[this.temp_feed_size].extra_id);
+      this.opened_feed.push(this.allFeeds[this.temp_feed_size].element_id);
     }
   }
 
@@ -44,7 +44,7 @@ export class ElementDefaultTemplateComponent implements OnInit {
   }
 
   openElementDetailsPage(id) {
-    this.router.navigate(['extra/' + id]);
+    this.router.navigate(['element/' + id]);
   }
 
 }
