@@ -33,14 +33,30 @@ export const extraFeed = {
             extra_type: 'Image',
             extra_desription: 'This project: Subu created one image per day on his daily commute.\
             Each image contains what does the group of that species is called, also the image implies the meaning. \
-            (some more crap). He used canva for creating quick immages, fonts and convertion. You can search the project \
-            response with above hashtag in insta, if you love them, share them <3  \
-            <p> nwe paragea daw',
-            extra_desription_detailed: '<b>This project : </b> Subu created one image per day on his daily commute.\
-            Each image contains what does the group of that species is called, also the image implies the meaning. \
-            (some more crap). He used canva for creating quick immages, fonts and convertion. You can search the project \
-            response with above hashtag in insta, if you love them, share them <3  \
-            <p> nwe paragea daw',
+            He used canva for creating quick immages, fonts and convertion. You can search the project \
+            response with above hashtag in insta, if you love them, share them <3',
+            extra_desription_detailed: '<p>The whole idea of this project was to create a minimal design with tools available \
+                                        on smart phones. The design holds the animal them. Each text in the design describes what \
+                                        that perticular speciese of group of animals is called.</p> </br> \
+                                        <p> I started with <b>Murder :</b> A group of crows is called as a murder, The red color \
+                                        background implies blood, or some thing ghore, the font used was support its purpose. </p> </br> \
+                                        <b>School :</b> A group of fish is called a school, hence I added multiple fishesh moving \
+                                        in one direction, the colors yellow and black is used to get a touch of school bus \
+                                        (or a taxi) </p> </br> <p><b>Pride :</b> this means group of lions. Although I have used \
+                                        only one lion in the image, supporting with a text with a fullstop. This implies the \
+                                        musculanity of the animal. also to convey that the pride of this animal doen\'t relie on its \
+                                        number. this image was created using only triangle, pentagon and hexagon shapes. \
+                                        Background color choosen is to reflect its nature</p> </br> <p><b>Flamboyance :</b> Group of \
+                                        flemingoes are flamboyance. Hence used the curvy text, which also, indecates the curvy necks\
+                                        of the bird, the color also indecates the color of the bird.</p> </br> <p>\
+                                        <b>Parade :</b> This is quiet a common word, this describes elephants marching in group. \
+                                        background used was ivory color, and The text Parade was put in a box to indicate the symetry and\
+                                        tight patttern just like a army marching or parading. </p> </br> <p> <b>Swarm :</b>\
+                                        This indicates group of bees (or birds). The pointed triangles which are floaking around \
+                                        shows the pattern of bees flying, the pointed triangles are used to replicate \
+                                        the pointed stings of bees, yellow and black are the common color pattern of bees\
+                                        </p> </br><p>The whole project was created during my commute to office, tools used \
+                                        were only canva. I used only the materials available in canva.',
             extra_style: {
                 background: '#ffffff',
                 color: '#0f1620',

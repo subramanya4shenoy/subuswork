@@ -47,6 +47,7 @@
                 margin: 35px auto 0px auto;
                 text-align: center;
                 font-size: 17px;
+                visibility: hidden;
             }
             .logo-area__title {
                 width: 100%;
@@ -64,8 +65,8 @@
                 width: 260px;
                 overflow-y: auto;
                 padding: 0px 20px;
-                text-align: center;
-                font-size: 18px;
+                text-align: left;
+                font-size: 15px;
                 line-height: 28px;
             }
         }
@@ -144,7 +145,7 @@
                     width: auto;
                     overflow-y: auto;
                     padding: 0px 20px;
-                    text-align: center;
+                    text-align: left;
                     font-size: 15px;
                     line-height: 28px;
                 }
