@@ -36,7 +36,7 @@ export const extraFeed = {
             He used canva for creating quick immages, fonts and convertion. You can search the project \
             response with above hashtag in insta, if you love them, share them <3',
             extra_desription_detailed: '<p>The whole idea of this project was to create a minimal design with tools available \
-                                        on smart phones. The design holds the animal them. Each text in the design describes what \
+                                        on smart phones. The design holds the animal theme. Each text in the design describes what \
                                         that perticular speciese of group of animals is called.</p> </br> \
                                         <p> I started with <b>Murder :</b> A group of crows is called as a murder, The red color \
                                         background implies blood, or some thing ghore, the font used was support its purpose. </p> </br> \

@@ -6,7 +6,7 @@
     height: 100vh;
     z-index: 100;
     background: #fff;
-    .extra-page-close{
+    .extra-page-close {
         font-size: 22px;
         font-family: 'contentFont';
         width: 40px;
@@ -92,7 +92,7 @@
         width: 100vw;
         height: 100vh;
         z-index: 100;
-        .extra-page-close{
+        .extra-page-close {
             font-size: 22px;
             font-family: 'contentFont';
             width: 40px;
@@ -171,6 +171,26 @@
 }
 
 @media Only screen and (max-width: 600px) {
+    .stick {
+        position: fixed;
+        top: -87vw;
+        box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3);
+        transition: .4s all linear;
+    }
+    .stick-offset {
+        margin-top: 468px;
+        margin-top: calc(100vw + 20px);
+    }
+    .stick-with-open{
+        top: 0;
+    }
+    .extra-page__left-gallery-stick-close{
+        position: absolute;
+        width: 7vw;
+        height: 7vw;
+        left: 47vw;
+        transform: rotate(-90deg);
+    }
     .extra-page {
         position: fixed;
         top: 0;
@@ -179,47 +199,52 @@
         height: 100vh;
         z-index: 100;
         overflow: scroll;
-        .extra-page-close{
-            font-size: 22px;
+        .extra-page-close {
+            font-size: 7vw;
             font-family: 'contentFont';
-            width: 30px;
-            height: 30px;
+            width: 10vw;
+            height: 10vw;
             text-align: center;
-            line-height: 42px;
-            background: transparent;
-            border-radius: 50%;
-            color: #ffff;
+            line-height: 11vw;
+            background: black;
+            bo: 0;
+            color: #f5f4f4;
             border: none;
             position: fixed;
-            left: 3vw;
-            top: 3vw;
+            top: 85vh;
+            right: 0vw;
             cursor: pointer;
-            transform: rotateY(180deg);
+            padding-left: 1vw;
+            border-top-left-radius: 40px;
+            border-bottom-left-radius: 40px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
         }
         .extra-page__left-gallery {
             float: none;
             width: 100vw;
-            height: calc(100vw + 50px);
+            height: calc(100vw + 27px);
             background: grey;
             overflow-y: auto;
             overflow-y: overlay;
+            transition: .4s all linear;
             .extra-page__left-gallery-hero-image {
                 margin: 10vw auto 6vw auto;
                 width: 80vw;
                 height: 80vw;
                 border-radius: 4px;
                 overflow: hidden;
-                box-shadow: 0 30px 60px -12px rgba(50,50,93,.25), 0 18px 36px -18px rgba(0,0,0,.3); 
+                box-shadow: 0 30px 60px -12px rgba(50, 50, 93, .25), 0 18px 36px -18px rgba(0, 0, 0, .3);
                 img {
                     width: 100%;
                     height: 100%;
                 }
             }
             .extra-page__left-gallery-slide-image {
-                margin: 0px 10px;
-                height: 8vw;
-                width: auto;
                 max-width: 100vw;
+                width: 80vw;
+                margin: 10px auto;
+                overflow: visible;
                 .extra-page__gallery-thumbnail {
                     float: left;
                     width: 8vw;
