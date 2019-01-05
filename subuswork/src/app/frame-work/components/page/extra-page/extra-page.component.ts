@@ -62,7 +62,8 @@ export class ExtraPageComponent implements OnInit, AfterViewInit, OnDestroy {
   @HostListener('window:scroll', ['$event'])
   handleScroll($event) {
     const windowScroll = $event.target.scrollTop;
-    if (windowScroll >= 327) {
+    console.log(windowScroll);
+    if (windowScroll >= 361) {
       this.sticky = true;
       console.log(true);
     } else {
