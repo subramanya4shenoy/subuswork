@@ -14,3 +14,23 @@
         line-height: 34px;
     }
 }
+
+@media Only screen and (max-width: 600px) {
+    .extra {
+        .title {
+            font-family: "titleFont";
+            font-size: 20px;
+            text-transform: uppercase;
+            margin: 35px 0 0px;
+            text-align: center;
+            width: 100%;
+        }
+        .temp-info{
+            font-family: "titleFont";
+            text-align: center;
+            padding: 2px 0px;
+            font-size: 15px;
+            line-height: 28px;
+        }
+    }
+}

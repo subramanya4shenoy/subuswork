@@ -25,11 +25,10 @@
 @media Only screen and (max-width: 600px) {
     .timeline {
         .title {
-            font-family: "titlefont";
-            font-size: 23px;
+            font-family: "titleFont";
+            font-size: 20px;
             text-transform: uppercase;
-            margin-top: 15px;
-            margin-left: 0;
+            margin: 35px 0 12px;
             text-align: center;
             width: 100%;
         }

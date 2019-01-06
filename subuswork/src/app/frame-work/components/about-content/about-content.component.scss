@@ -57,6 +57,14 @@
 
 @media only screen and (max-width: 600px) {
     .about {
+        .title {
+            font-family: "titleFont";
+            font-size: 20px;
+            text-transform: uppercase;
+            margin: 35px 0 0px;
+            text-align: center;
+            width: 100%;
+        }
         .about-section {
             width: 100%;
             .profile-pic-area {
@@ -95,9 +103,10 @@
                 padding: 15px 0px;
                 .profile-info {
                     font-family: "contentfont";
-                    font-size: 18px;
+                    font-size: 13px;
                     line-height: 38px;
                     text-align: center;
+                    letter-spacing: .2px;
                 }
             }
         }
