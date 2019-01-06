@@ -18,9 +18,25 @@
 // ]
 
 export const logoFeed = {
-    total_count: 6,
+    total_count: 7,
     // the latest ogo should be listed on top
     features: [
+        {
+            logo_id: 7,
+            logo_type: 'png',
+            logo_url: '',
+            // tslint:disable-next-line:max-line-length
+            logo_cover_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/logo%2Ffirstdigitalart.png?alt=media&token=bb6c5c22-55fc-4208-9931-b19a6153589a',
+            logo_description: 'First illustration on AI: Created using Adobe illustator, first of my attempt on re-learning the AI,\
+                            this was one for the dribble posts, which Tutvid youtube channel recreated. I followed the same,\
+                            working on many more. This was just an transparent planet with transparent content inside, difficulty\
+                            level was somewhere between normal and hard. took 2 hours to complete.',
+            logo_title: 'First digital Illustration',
+            logo_description_short: 'First illustration on AI: Created using Adobe illustator, first of my attempt on re-learning the AI,\
+            this was one for the dribble posts, which Tutvid youtube channel recreated. I followed the same,\
+            working on many more. This was just an transparent planet with transparent content inside, difficulty\
+            level was somewhere between normal and hard. took 2 hours to complete.'
+        },
         {
             logo_id: 6,
             logo_type: 'jpg',
