@@ -1,11 +1,13 @@
 <div class="overlay" *ngIf="show">
     <div class="logo-area">
         <div class="close pointer" (click)="goback()">x</div>
-        <div class="logo-area__img">
-            <img src="{{logo.logo_cover_url}}" alt="">
+        <div class="logo-area_image-area">
+            <div class="logo-area__img">
+                    <img src="{{logo.logo_cover_url}}" alt="">
+            </div>
         </div>
         <div class="logo-area__desc">
-            <div class="logo-area__socialShareBar">Like . Share</div>
+            <!-- <div class="logo-area__socialShareBar">Like . Share</div> -->
             <div class="logo-area__title">{{logo.logo_title}}</div>
             <div class="logo-area__description">{{logo.logo_description}}</div>
         </div>
