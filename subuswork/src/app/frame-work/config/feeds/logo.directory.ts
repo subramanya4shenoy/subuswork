@@ -18,9 +18,37 @@
 // ]
 
 export const logoFeed = {
-    total_count: 7,
+    total_count: 9,
     // the latest ogo should be listed on top
     features: [
+        {
+            logo_id: 9,
+            logo_type: 'png',
+            logo_url: '',
+            // tslint:disable-next-line:max-line-length
+            logo_cover_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/logo%2F3.png?alt=media&token=2aae263e-9dcb-4ddf-b321-980ce64a02c1',
+            logo_description: 'Been sick for 3 days now due to the weather. caight cold\
+                and fever, swallowing bitter pills. Illustaration was done in an hour. used adobe illustrator.\
+                used grind effect on the corners. which was handy.',
+            logo_title: 'Sick! cold and fever',
+            logo_description_short: 'Been sick for 3 days now due to the weather. caight cold\
+            and fever, swallowing bitter pills. Illustaration was done in an hour. used adobe illustrator.\
+            used grind effect on the corners. which was handy.'
+        },
+        {
+            logo_id: 8,
+            logo_type: 'png',
+            logo_url: '',
+            // tslint:disable-next-line:max-line-length
+            logo_cover_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/logo%2F2.png?alt=media&token=372accba-5cc6-4184-a84b-0b1b9b90708c',
+            logo_description: 'A quick illustration (3 min) to get practiced with the shortcuts of \
+                               adobe illustrator. The messi hair bun came as a inspiration\
+                               from a women sitting infront of me in daily commute.',
+            logo_title: 'A Messi Hair Bun',
+            logo_description_short: 'A quick illustration (3 min) to get practiced with the shortcuts of \
+            adobe illustrator. The messi hair bun came as a inspiration\
+            from a women sitting infront of me in daily commute.'
+        },
         {
             logo_id: 7,
             logo_type: 'png',
