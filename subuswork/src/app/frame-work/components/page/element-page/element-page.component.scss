@@ -6,12 +6,13 @@
     height: 100vh;
     z-index: 100;
     background: #fff;
+    overflow-y: scroll;
 
     .element-page-close{
         position: fixed;
         right: 0;
-        left: calc(100vw - 50px - 4vh);
-        top: 2vh;
+        top: 85vh;
+        left: calc(100vw - 60px);
         width: 50px;
         height: 50px;
         background: #25eaa4;

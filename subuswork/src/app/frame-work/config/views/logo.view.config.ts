@@ -12,7 +12,7 @@ export const LogoConfig = {
     feed: logoFeed,
     templates: {
         defaultTemplate: {
-            load_per_click: 4
+            load_per_click: 8
         }
     }
 };
