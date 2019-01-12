@@ -4,9 +4,65 @@
     </div>
 
     <div class="title"> Dynamically changing logo </div>
-    <div class="content">
-       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat in eum velit cumque voluptatum deserunt alias? Ducimus itaque earum odit obcaecati asperiores, labore nulla fuga? Officiis rem assumenda molestias ad!
-       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse fuga sapiente, harum corrupti exercitationem incidunt nulla commodi vel hic tempora obcaecati quidem, fugit quaerat natus pariatur cumque veniam assumenda qui.
-       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse fuga sapiente, harum corrupti exercitationem incidunt nulla commodi vel hic tempora obcaecati quidem, fugit quaerat natus pariatur cumque veniam assumenda qui.
+    <div class="element-one-introduction">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat in eum velit cumque voluptatum deserunt alias? Ducimus
+        itaque earum odit obcaecati asperiores, labore nulla fuga? Officiis rem assumenda molestias ad! Lorem ipsum dolor
+        sit, amet consectetur adipisicing elit. Esse fuga sapiente, harum corrupti exercitationem incidunt nulla commodi
+        vel hic tempora obcaecati quidem, fugit quaerat natus pariatur cumque veniam assumenda qui. Lorem ipsum dolor sit,
+        amet consectetur adipisicing elit. Esse fuga sapiente, harum corrupti exercitationem incidunt nulla commodi vel hic
+        tempora obcaecati quidem, fugit quaerat natus pariatur cumque veniam assumenda qui.
+    </div>
+
+    <div class="element-one-involve">
+        <div class="involve-configbtn">
+            <div class="involve-configbtn__btn pointer">shuffle</div>
+        </div>
+
+        <div class="involve-play-area">
+            <div class="el-bg" [style.backgroundColor]="gradients_collection_bg[bg]"></div>
+            <div class="el-star-cloud"></div>
+            <div class="el-sun-moon"></div>
+            <div class="el-mountain"></div>
+        </div>
+
+        <div class="involve-play-settings-tabs">
+            <div class="involve-play-settings-tab-title">
+                <div class="involve-play-settings-tab-title-custom">Custom</div>
+                <div class="involve-play-settings-tab-title-time">Time</div>
+            </div>
+            <div class="involve-play-settings-custom">
+                <div class="slider">
+                    <div class="start-icon"></div>
+                    <input type="range" min="0" max="12" value="0" step=1 (input)="changeBG($event.target.value)" class="rangeSelector" id="myRange">
+                    <div class="end-icon"></div>
+                </div>
+                <div class="slider">
+                    <div class="start-icon"></div>
+                    <input type="range" min="0" max="100" value="50" class="rangeSelector">
+                    <div class="end-icon"></div>
+                </div>
+                <div class="slider">
+                    <div class="start-icon"></div>
+                    <input type="range" min="1" max="100" value="50" class="rangeSelector">
+                    <div class="end-icon"></div>
+                </div>
+                <div class="slider">
+                    <div class="start-icon"></div>
+                    <input type="range" min="1" max="100" value="50" class="rangeSelector">
+                    <div class="end-icon"></div>
+                </div>
+            </div>
+            <div class="involve-play-settings-time" *ngIf=false>
+                <div class="slider">
+                    <div class="start-icon"></div>
+                    <input type="range" min="1" max="100" value="50" class="rangeSelector">
+                    <div class="end-icon"></div>
+                </div>
+            </div>
+        </div>
+        <div class="involve-play-result">
+            <input type="checkbox" name="vehicle1" value="Bike">"How is it working ?" Mode on.
+            <br>
+        </div>
     </div>
 </div>
