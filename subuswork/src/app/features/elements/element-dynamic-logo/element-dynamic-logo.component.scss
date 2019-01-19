@@ -1,5 +1,6 @@
 .element-one{
     font-family: 'contentFont';
+    text-align: center;
     .title{
         width: 65vw;
         background: #25eaa4;
@@ -53,6 +54,7 @@
             font-size: 13px;
             letter-spacing: .4px;
             color: #0c0c0c;
+            min-height: calc(100vh - 230px);
         }
 
         .element-one-involve{
@@ -78,9 +80,8 @@
                 }
             }
             .involve-play-area {
-                height: 50vh;
                 width: 100vw;
-                background: #f7f7f7;
+                background: #ffffff;            
                 .el-bg {
                     width: 100%;
                     height: 100%;
@@ -91,27 +92,17 @@
                 height: calc(50vh - 190px);
                 background: rgb(255, 255, 255);
                 min-height: 200px;
+                margin-top: 20px;
                 .involve-play-settings-tab-title {
                     height: 40px;
-                    .involve-play-settings-tab-title-custom {
-                        width: 50vw;
-                        float: left;
-                        height: 40px;
-                        font-size: 20px;
-                        text-align: center;
-                        line-height: 40px;
-                        letter-spacing: .7px;
-                        text-transform: uppercase;
-                    }
                     .involve-play-settings-tab-title-time {
-                        width: 50vw;
+                        width: 100vw;
                         float: left;
                         height: 40px;
-                        font-size: 20px;
+                        font-size: 13px;
                         text-align: center;
                         line-height: 40px;
                         letter-spacing: .7px;
-                        text-transform: uppercase;
                     }
                 }
                 .involve-play-settings-custom {
