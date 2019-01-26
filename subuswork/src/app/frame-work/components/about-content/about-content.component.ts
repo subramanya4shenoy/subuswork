@@ -9,7 +9,7 @@ import { ViewConfig } from '../../config/view.config';
 })
 export class AboutContentComponent implements OnInit {
 
-  private view = ViewConfig.about;
+  public view = ViewConfig.about;
 
   constructor() { }
 

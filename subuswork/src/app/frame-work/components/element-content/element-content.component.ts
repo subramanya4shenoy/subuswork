@@ -8,7 +8,7 @@ import { ViewConfig } from '../../config/view.config';
 })
 export class ElementContentComponent implements OnInit {
 
-  private view = ViewConfig.element;
+  public view = ViewConfig.element;
 
   constructor() { }
 

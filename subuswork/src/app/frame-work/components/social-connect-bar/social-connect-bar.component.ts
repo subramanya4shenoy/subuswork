@@ -9,7 +9,7 @@ import { SocialConfig } from '../../config/social.config';
 export class SocialConnectBarComponent implements OnInit {
 
   public base_url = SocialConfig.baseURL;
-  private social_link = SocialConfig.socialLink;
+  public social_link = SocialConfig.socialLink;
 
   constructor() { }
 
