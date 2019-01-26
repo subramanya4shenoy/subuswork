@@ -5,6 +5,8 @@ import { AngularFireStorageModule } from 'angularfire2/storage';
 import { FrameWorkModule } from './frame-work/frame-work.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -21,7 +23,8 @@ import { AppComponent } from './app.component';
       storageBucket: 'subuswork.appspot.com'
     }),
     AngularFireStorageModule,
-    FrameWorkModule
+    FrameWorkModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
