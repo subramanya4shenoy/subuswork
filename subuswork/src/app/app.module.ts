@@ -16,6 +16,7 @@ import { environment } from '../environments/environment';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     AngularFireModule.initializeApp({
       apiKey: 'AIzaSyBi3XOyybCRzwewmrZ1lCqExnVATtgi7oc',
       authDomain: 'subuswork.firebaseapp.com',
@@ -23,8 +24,7 @@ import { environment } from '../environments/environment';
       storageBucket: 'subuswork.appspot.com'
     }),
     AngularFireStorageModule,
-    FrameWorkModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    FrameWorkModule
   ],
   providers: [],
   bootstrap: [AppComponent]
