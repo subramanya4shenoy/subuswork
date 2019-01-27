@@ -29,20 +29,6 @@ export const FeaturesList = {
     // the latest feature should be listed on top
     features: [
         {
-            feature_id: 1,
-            feature_category: 'extra',
-            feature_type: 'image',
-            feature_url: '/extra/1',
-            feature_banner_style: {
-                'background': '#000',
-                'color': '#d48b8a'
-            },
-            // tslint:disable-next-line:max-line-length
-            feature_img_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F1%2F2.jpg?alt=media&token=99c4ea97-a547-450e-b4fe-b9df4d493964',
-            feature_description: '#SubusDailyAnimal: images of group of animals put in a self descriptive manner.',
-            feature_short_description: '#SubusDailyAnimal: images of group of animals put in a self descriptive manner.'
-        },
-        {
             feature_id: 2,
             feature_category: 'element',
             feature_type: 'image',
@@ -55,6 +41,20 @@ export const FeaturesList = {
             feature_img_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/logo%2F3.png?alt=media&token=2aae263e-9dcb-4ddf-b321-980ce64a02c1',
             feature_description: 'Been sick for 3 days now due to the weather. caught cold and fever, swallowing bitter pills.',
             feature_short_description: 'Been sick for 3 days now due to the weather. caught cold and fever, swallowing bitter pills.'
+        },
+        {
+            feature_id: 1,
+            feature_category: 'extra',
+            feature_type: 'image',
+            feature_url: '/extra/1',
+            feature_banner_style: {
+                'background': '#000',
+                'color': '#d48b8a'
+            },
+            // tslint:disable-next-line:max-line-length
+            feature_img_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F1%2F2.jpg?alt=media&token=99c4ea97-a547-450e-b4fe-b9df4d493964',
+            feature_description: '#SubusDailyAnimal: images of group of animals put in a self descriptive manner.',
+            feature_short_description: '#SubusDailyAnimal: images of group of animals put in a self descriptive manner.'
         }
     ]
 };
