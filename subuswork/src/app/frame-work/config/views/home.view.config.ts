@@ -12,7 +12,7 @@ export const HomeConfig = {
     feed: FeaturesList,
     templates: {
         defaultTemplate: {
-            load_per_click: 1
+            load_per_click: 2
         }
     }
 };
