@@ -1,6 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { MasterConfig } from '../../config/master.config';
-import * as _ from 'underscore';
 
 @Component({
   selector: 'app-side-menu',
@@ -20,7 +19,12 @@ export class SideMenuComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    _.each(this.menuList, (menu) => {
+    // _.each(this.menuList, (menu) => {
+    //   if (menu.menu_default) {
+    //     this.selectedMenu = menu.menu_string;
+    //   }
+    // });
+    this.menuList.forEach(menu => {
       if (menu.menu_default) {
         this.selectedMenu = menu.menu_string;
       }

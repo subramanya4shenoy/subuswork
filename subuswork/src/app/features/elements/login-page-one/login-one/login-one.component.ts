@@ -4,9 +4,9 @@ import {
   state,
   style,
   animate,
-  transition,
-  // ...
+  transition
 } from '@angular/animations';
+import { $ } from 'protractor';
 
 @Component({
   selector: 'app-login-one',
@@ -18,9 +18,10 @@ export class LoginOneComponent implements OnInit, OnDestroy {
   constructor() { }
 
   ngOnInit() {
+    document.body.style.overflow = 'hidden';
   }
 
   ngOnDestroy() {
-
+    document.body.style.overflow = 'auto';
   }
 }
