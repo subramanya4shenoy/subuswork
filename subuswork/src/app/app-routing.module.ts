@@ -13,14 +13,13 @@ const routes: Routes = [
         pathMatch: 'full'
     },
     {
-        path: 'element/:id',
-        component: ElementPageComponent,
-        pathMatch: 'full'
-    },
-    {
         path: 'extra/:id',
         component: ExtraPageComponent,
         pathMatch: 'full'
+    },
+    {
+        path: 'element/login-one',
+        loadChildren: './features/elements/login-page-one/login-page-one.module#LoginPageOneModule'
     },
     {
         path: 'diary/:id',

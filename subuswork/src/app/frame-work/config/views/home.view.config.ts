@@ -3,7 +3,7 @@ import { FeaturesList } from '../features.directory';
 export const HomeConfig = {
     shouldShow: true,
     message: [
-        'Very recently Subu Worked on..'
+        'Migrated to angular7, PWA and service workers are broken, hold on till I find a solution.'
     ],
     texts: [
         'more',
