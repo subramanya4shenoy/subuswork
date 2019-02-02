@@ -15,6 +15,7 @@ import { environment } from '../environments/environment';
   ],
   imports: [
     BrowserModule,
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     AppRoutingModule,
     AngularFireModule.initializeApp({
       apiKey: 'AIzaSyBi3XOyybCRzwewmrZ1lCqExnVATtgi7oc',
@@ -23,7 +24,6 @@ import { environment } from '../environments/environment';
       storageBucket: 'subuswork.appspot.com'
     }),
     AngularFireStorageModule,
-    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     FrameWorkModule
   ],
   providers: [],
