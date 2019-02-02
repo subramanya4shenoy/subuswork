@@ -52,7 +52,7 @@ export class ExtraPageComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   goback() {
-    document.body.style.overflow = 'auto';
+    document.body.style.overflow = 'overlay';
     event.preventDefault();
     this.location.back();
   }
@@ -76,7 +76,7 @@ export class ExtraPageComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    document.body.style.overflow = 'auto';
+    document.body.style.overflow = 'overlay';
   }
 
 }
