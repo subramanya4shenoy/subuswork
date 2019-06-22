@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { LogoPageComponent } from './frame-work/components/page/logo-page/logo-page.component';  // Add your component here
 import { ElementPageComponent } from './frame-work/components/page/element-page/element-page.component';  // Add your component here
 import { ExtraPageComponent } from './frame-work/components/page/extra-page/extra-page.component';
@@ -29,7 +29,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
+    imports: [RouterModule.forRoot(routes, { useHash: true, preloadingStrategy: PreloadAllModules })],
     exports: [RouterModule]
 })
 export class AppRoutingModule { }
