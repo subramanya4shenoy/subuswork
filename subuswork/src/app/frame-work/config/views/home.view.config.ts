@@ -3,7 +3,7 @@ import { FeaturesList } from '../features.directory';
 export const HomeConfig = {
     shouldShow: true,
     message: [
-        'Migrated to angular7, PWA and service workers are broken, hold on till I find a solution.'
+        'Okay. Got rid of service worker, as it was breaking everything. '
     ],
     texts: [
         'more',
