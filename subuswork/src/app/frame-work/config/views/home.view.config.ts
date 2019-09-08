@@ -3,7 +3,7 @@ import { FeaturesList } from '../features.directory';
 export const HomeConfig = {
     shouldShow: true,
     message: [
-        'Okay. Got rid of service worker, as it was breaking everything. '
+        'Lazy to build the backend. All individual project is treated as new github projects and linked here. sorry! '
     ],
     texts: [
         'more',
@@ -12,7 +12,7 @@ export const HomeConfig = {
     feed: FeaturesList,
     templates: {
         defaultTemplate: {
-            load_per_click: 2
+            load_per_click: 3
         }
     }
 };

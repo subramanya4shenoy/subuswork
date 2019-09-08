@@ -21,9 +21,9 @@ export const elementFeed = {
         {
             element_id: 'login-one',
             element_name : 'login-one',
-            element_feed_title: 'Minimal registration page',
+            element_feed_title: 'registration page and login - Concept',
             // tslint:disable-next-line:max-line-length
-            element_feed_desription: 'minimal lLogin, signup, forgot password screen',
+            element_feed_desription: 'Typical login page concept. stand alone component can be reused to your projects too',
             element_feed_image_exist: false,
             element_feed_image_url: ''
       }

@@ -22,12 +22,26 @@
 // ]
 
 export const FeaturesList = {
-    total_count: 2,
+    total_count: 3,
     total_element_count: 0,
-    total_extra_count: 1,
+    total_extra_count: 2,
     total_logo_count: 1,
     // the latest feature should be listed on top
     features: [
+        {
+            feature_id: 3,
+            feature_category: 'extra',
+            feature_type: 'image',
+            feature_url: '/extra/2',
+            feature_banner_style: {
+                'background': '#350074',
+                'color': '#dd1174'
+            },
+            // tslint:disable-next-line:max-line-length
+            feature_img_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F2%2FWhatsApp%20Image%202019-09-07%20at%2010.04.44%20PM%20(9).jpeg?alt=media&token=1e260ca0-0135-49c0-8096-cb7fd0661816',
+            feature_description: 'Drew a vegetable every day for a week in pro create.',
+            feature_short_description: 'Drew a vegetable every day for a week in pro create.'
+        },
         {
             feature_id: 2,
             feature_category: 'element',

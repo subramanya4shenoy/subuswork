@@ -22,9 +22,63 @@
 // ]
 
 export const extraFeed = {
-    total_count: 1,
+    total_count: 2,
     // the latest ogo should be listed on top
     features: [
+        {
+            extra_id: 2,
+            // tslint:disable-next-line:max-line-length
+            extra_hero_image_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F2%2FWhatsApp%20Image%202019-09-07%20at%2010.04.44%20PM%20(9).jpeg?alt=media&token=1e260ca0-0135-49c0-8096-cb7fd0661816',
+            extra_title: '#VeganWeek',
+            extra_type: 'Image',
+            extra_desription: 'Got new iPad mini for drawing on the go. Started creating stupid stuffs\
+                              to learn the procreate app (Boy! this app is lit). great app to draw\
+                              easy to learn and great collection of brushes. for this project, I decided to draw one\
+                              vegetable eavery day in limited time for a week',
+            extra_desription_detailed: 'The whole point of this project was to learn procreate app on ipad.\
+                                        I drew every day one vegetable there by improving upon the skills\
+                                        nothing fancy really, Tried to have a common art style with all the\
+                                        images thats why the vegetables are kept inside a broken frame \
+                                        got a good response for this style in redit so maintained the same\
+                                        <p>If you have any feed back on this, please search instagram for the \
+                                        tag #subuswork and you can give a feedback there.</p> - Love <3',
+            extra_style: {
+                background: '#ffffff',
+                color: '#0f1620',
+            },
+            extra_content: [
+                {
+                    extra_content_id: 14,
+                    // tslint:disable-next-line:max-line-length
+                    extra_content_img_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F2%2FWhatsApp%20Image%202019-09-07%20at%2010.04.44%20PM%20(2).jpeg?alt=media&token=8b47b97a-0ab0-4e68-9213-ee08063900a2'
+                },
+                {
+                    extra_content_id: 13,
+                    // tslint:disable-next-line:max-line-length
+                    extra_content_img_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F2%2FWhatsApp%20Image%202019-09-07%20at%2010.04.44%20PM%20(3).jpeg?alt=media&token=d4e6a98d-9f1d-4112-bfc3-5d08fabec0e8'
+                },
+                {
+                    extra_content_id: 15,
+                    // tslint:disable-next-line:max-line-length
+                    extra_content_img_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F2%2FWhatsApp%20Image%202019-09-07%20at%2010.04.44%20PM%20(4).jpeg?alt=media&token=2f4f6ee6-a93d-4e92-817a-62188e6130e6'
+                },
+                {
+                    extra_content_id: 11,
+                    // tslint:disable-next-line:max-line-length
+                    extra_content_img_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F2%2FWhatsApp%20Image%202019-09-07%20at%2010.04.44%20PM%20(6).jpeg?alt=media&token=09d413e6-9e42-4fde-85e1-ef3d6defeb4e'
+                },
+                {
+                    extra_content_id: 12,
+                    // tslint:disable-next-line:max-line-length
+                    extra_content_img_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F2%2FWhatsApp%20Image%202019-09-07%20at%2010.04.44%20PM%20(5).jpeg?alt=media&token=eacf305c-0338-4bb0-9c5f-09ff0d9b5475'
+                },
+                {
+                    extra_content_id: 10,
+                    // tslint:disable-next-line:max-line-length
+                    extra_content_img_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F2%2FWhatsApp%20Image%202019-09-07%20at%2010.04.44%20PM%20(9).jpeg?alt=media&token=1e260ca0-0135-49c0-8096-cb7fd0661816'
+                }
+            ]
+        },
         {
             extra_id: 1,
             // tslint:disable-next-line:max-line-length

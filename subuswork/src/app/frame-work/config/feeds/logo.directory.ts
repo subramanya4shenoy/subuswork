@@ -18,9 +18,69 @@
 // ]
 
 export const logoFeed = {
-    total_count: 9,
+    total_count: 14,
     // the latest ogo should be listed on top
     features: [
+        {
+            logo_id: 15,
+            logo_type: 'png',
+            logo_url: '',
+            // tslint:disable-next-line:max-line-length
+            logo_cover_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F2%2FWhatsApp%20Image%202019-09-07%20at%2010.04.44%20PM%20(4).jpeg?alt=media&token=2f4f6ee6-a93d-4e92-817a-62188e6130e6',
+            logo_description: 'carrot - Thursday',
+            logo_title: 'carrot - Thursday',
+            logo_description_short: 'carrot - Thursday'
+        },
+        {
+            logo_id: 14,
+            logo_type: 'png',
+            logo_url: '',
+            // tslint:disable-next-line:max-line-length
+            logo_cover_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F2%2FWhatsApp%20Image%202019-09-07%20at%2010.04.44%20PM%20(2).jpeg?alt=media&token=8b47b97a-0ab0-4e68-9213-ee08063900a2',
+            logo_description: 'bellpepper - saturday',
+            logo_title: 'bellpepper - saturday',
+            logo_description_short: 'bellpepper - saturday'
+        },
+        {
+            logo_id: 13,
+            logo_type: 'png',
+            logo_url: '',
+            // tslint:disable-next-line:max-line-length
+            logo_cover_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F2%2FWhatsApp%20Image%202019-09-07%20at%2010.04.44%20PM%20(3).jpeg?alt=media&token=d4e6a98d-9f1d-4112-bfc3-5d08fabec0e8',
+            logo_description: 'chilly - Friday',
+            logo_title: 'chilly - Friday',
+            logo_description_short: 'chilly - Friday'
+        },
+        {
+            logo_id: 12,
+            logo_type: 'png',
+            logo_url: '',
+            // tslint:disable-next-line:max-line-length
+            logo_cover_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F2%2FWhatsApp%20Image%202019-09-07%20at%2010.04.44%20PM%20(5).jpeg?alt=media&token=eacf305c-0338-4bb0-9c5f-09ff0d9b5475',
+            logo_description: 'Tomato - Wednesday',
+            logo_title: 'Tomato - Wednesday',
+            logo_description_short: 'Tomato - Wednesday'
+        },
+        {
+            logo_id: 11,
+            logo_type: 'png',
+            logo_url: '',
+            // tslint:disable-next-line:max-line-length
+            logo_cover_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F2%2FWhatsApp%20Image%202019-09-07%20at%2010.04.44%20PM%20(6).jpeg?alt=media&token=09d413e6-9e42-4fde-85e1-ef3d6defeb4e',
+            logo_description: 'Tuesday is nothing but a second monday',
+            logo_title: 'Bitter tuesday',
+            logo_description_short: 'Tuesday is nothing but a second monday'
+        },
+        {
+            logo_id: 10,
+            logo_type: 'png',
+            logo_url: '',
+            // tslint:disable-next-line:max-line-length
+            logo_cover_url: 'https://firebasestorage.googleapis.com/v0/b/subuswork.appspot.com/o/extra%2F2%2FWhatsApp%20Image%202019-09-07%20at%2010.04.44%20PM%20(9).jpeg?alt=media&token=1e260ca0-0135-49c0-8096-cb7fd0661816',
+            logo_description: 'Started drawing brinjal on monday, as per the monday mood',
+            logo_title: 'Monday Blues',
+            logo_description_short: 'Started drawing brinjal on monday, as per the monday mood'
+        },
         {
             logo_id: 9,
             logo_type: 'png',

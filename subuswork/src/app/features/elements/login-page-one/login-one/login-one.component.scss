@@ -3,26 +3,13 @@ $lo-thcolor1: #1B192A;
 $lo-thcolor2: #FF3E2F;
 $lo-thcolor3: #E9E8E1;
 $lo-thcolor4: #4FB398;
+
 .login-one {
     background: #fff;
     font-family: 'contentFont';
-    .login-one-register-card {
-        width: 350px;
-        height: 400px;
-        background: $lo-thcolor1;
-        color: $lo-thcolor3;
-        border-radius: 7px;
-        margin: 0 auto;
-        border: 1px solid transparent;
-        margin-top: calc(50vh - 200px);
-        box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3);
-        .login-one-register-email-text {
-            margin: 20px 100px;
-            opacity: .5;
-        }
-        .login-one-register-password-text{
-            margin: 20px 100px;
-            opacity: .5;
-        }
+    z-index: 9;
+
+    .login-one__balls{
+        position: absolute;
     }
 }
